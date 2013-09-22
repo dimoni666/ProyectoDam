@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="swfobject.js"></script>
+<title>Esta es nuestra musica!</title>
+</head>
+<body>
+<h3>Hip Hop desde la calle</h3>
+<div id="player4">This text will be replaced</div> 
+<script type="text/javascript"> 
+	var so = new SWFObject('mediaplayer.swf','mp4','320','140','7'); 
+	so.addParam('allowfullscreen','true'); 
+	so.addVariable('file','playlist1.xml'); 
+	so.addVariable('height','140'); 
+	so.addVariable('width','320'); 
+	so.addVariable('displaywidth','120'); 
+	so.write('player4'); 
+</script>
+
+</body>
+</html>

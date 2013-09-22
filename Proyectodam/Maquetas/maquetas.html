@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="inicio.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Expon tu arte</title>
+		<meta name="author" content="jaume" />
+		<!-- Date: 2013-05-30 -->
+	</head>
+	<body>
+		<div id="logo">
+			<img src="logo1.png" id=foto1 />
+		</div>
+		<div id="letras">
+			<img src="titulo1.png" id=foto2 />
+		</div>
+		<div id="reproductor">
+			<a href="../mediaplayer/reproductor.html" target="_blank"><input type="button" value="Reproductor">
+			</div>
+		<div id="menu">
+		<ul>
+		<li><a href="../index.html">Home</a></li>
+			<li><a href="../Canciones/canciones.html">Canciones</a></li>
+			<li><a href="maquetas.html">Maquetas</a></li>
+			<li><a href="../Info/info.html">Contacta</a></li>
+			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
+			<li><a href="../Eventos/eventos.html">Eventos</a></li>
+           
+		</ul>
+		</div>
+	<div id="contenido">
+		<h2>Tienes un grupo? harto de no saber que hacer con tus canciones? Subelas y si nos gustan tendras un sitio en nuestros eventos!</h2>
+        <form enctype="multipart/form-data" action="uploader.php" method="POST">
+<input type="hidden" name="temas" value="true" />
+Titulo: <input type="text" name="titulo" id="titulo" size="30" /><br />
+A&ntilde;o: <input type="text" name="ano" id="ano" size="4" /><br />
+Artista: <input type="text" name="artista" id="artista" size="30" /><br />
+Fichero a subir: <input name="uploadedfile" type="file" /><br />
+<input type="submit" value="Upload File" />
+</form>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+body{
+	background-image:url(bg01.jpg);
+	background-repeat:no-repeat;
+}
+div#logo{
+	width: 120px;
+	height: 120px;
+	
+}
+div#foto1{
+	width: 120px;
+	height: 120px;
+}
+
+div#letras{
+	width:600px;
+	height: 200px;
+	position:absolute;
+	left:350px;
+	top:0px;
+}
+div#menu{
+	width:800px;
+	height:35px;
+	position: absolute;
+	left: 250px;
+	top: 220px;
+}
+div#reproductor{
+	width:150px;
+	height: 200px;
+	position:absolute;
+	right:20px;
+	top:300px;
+}
+div#buscador{
+	width:200px;
+	height:60px;
+	position:absolute;
+	left:10px;
+	top:300px;
+}
+div#contenido{
+	width:800px;
+	height:500px;
+	position:absolute;
+	left:250px;
+	top:300px;
+}
+div#sesion{
+	width: 215px;
+	height: 120px;
+	position:absolute;
+	right:50px;
+	top:10px;
+	background-color:gray;
+}
+
+#menu li{
+	display: inline;
+}
+#menu li a {
+font-family: Arial;
+font-size:20px;
+text-decoration: none;
+float:left;
+padding: 10px;
+background-color: #2175bc;
+color: #fff;
+}
+#menu li a:hover {
+background-color: #2586d7;
+margin-top:-2px;
+padding-bottom:12px;
+}
+h1 {
+	position:relative;
+	left:10px;
+	}
+#evento1 {
+	position:relative;
+	left:18px;
+	
+	}
+#evento2 {
+	position:relative;
+	left:18px;
+	}
+#evento3 {
+	position:relative;
+	left:18px;
+	}
+	#evento4 {
+	position:relative;
+	left:18px;
