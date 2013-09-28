@@ -14,7 +14,7 @@
             WHERE nickname = '".$usr."'
             AND password = '".$pw_enc."' ";  
     $result     =mysql_query($sql,$conexio); 
- 
+ 	
     $uid = "";
      
     //Si existe al menos una fila
@@ -47,6 +47,7 @@
             <input type="hidden" name="msg_error" value="1">
         </form>
 <?php
+		echo $sql;
     }
 ?>
                      
