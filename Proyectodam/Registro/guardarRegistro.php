@@ -152,7 +152,7 @@
  
      
     //Validar que el nombre de usuario no exista en la BD
-    $sql = "SELECT  id  FROM usuarios
+    $sql = "SELECT  id  FROM tbl_users
     WHERE nickname = '".trim($str_username)."';";
     $rs_sql = mysql_query($sql);
     $log .=  $sql."<br>";
@@ -165,7 +165,7 @@
     }
  
     //Validar que el email no exista en la BD
-    $sql = "SELECT  id  FROM usuarios
+    $sql = "SELECT  id  FROM tbl_users
     WHERE mail='".$str_correo."';";
     $rs_sql = mysql_query($sql);
     $log .=  $sql."<br>";
@@ -218,7 +218,7 @@
  
      
     //Formar el query para el insert del nuevo usuario
-    $queryInsert="INSERT INTO usuarios (
+    $queryInsert="INSERT INTO tbl_users (
     nombre,
     apellido,
     apellido2,
