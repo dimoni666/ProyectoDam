@@ -6,10 +6,10 @@ function conectar_bd()
 {
     global $conexio;
     //Definir datos de conexion con el servidor MySQL
-    $elUsr = "u164867912_kase";
-    $elPw  = "ceroca00";
-    $elServer ="mysql.hostinger.es";
-    $laBd = "u164867912_adr";
+    $elUsr = "jaume";
+    $elPw  = "j1a5um2e";
+    $elServer ="localhost";
+    $laBd = "base1";
      
     //Conectar
     $conexio = mysql_connect($elServer, $elUsr,$elPw) or die (mysql_error());
