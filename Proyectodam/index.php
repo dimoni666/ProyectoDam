@@ -41,7 +41,7 @@ Ese lenguaje y esa cadencia particular se sustentan en una actitud contestataria
     <?php
 		echo '<p><a href="Registro/index.php"> Iniciar sesion </a></p>';
 
-		echo '<a href="cerrarSesion.php">Cerrar sesi&oacute;n</a>';
+		echo '<a href="Registro/cerrarSesion.php">Cerrar sesi&oacute;n</a>';
 ?>
     			
 			</form>
