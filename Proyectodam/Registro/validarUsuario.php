@@ -10,7 +10,7 @@
     //Obtengo la version encriptada del password
     $pw_enc = md5($pw);
      
-    $sql = "SELECT id FROM tbl_users
+    $sql = "SELECT id,nombre FROM tbl_users
             WHERE nickname = '".$usr."'
             AND password = '".$pw_enc."' ";  
     $result     =mysql_query($sql,$conexio); 
@@ -22,12 +22,16 @@
     {       
         //Obtener el Id del usuario en la BD        
         $uid = $fila['id'];
+        //Obtener el nombre del usuario
+        $nombre = $fila['nombre'];
         //Iniciar una sesion de PHP
         session_start();
         //Crear una variable para indicar que se ha autenticado
-        $_SESSION['autenticado']    = 'SI';
+        $_SESSION["autenticado"] = "SI";
         //Crear una variable para guardar el ID del usuario para tenerlo siempre disponible
-        $_SESSION['uid']            = $uid;
+        $_SESSION["uid"] = $uid;
+        //Guardamos el nombre
+        $_SESSION["nombre"] = $nombre;
         //CODIGO DE SESION
          
         //Crear un formulario para redireccionar al usuario y enviar oculto su Id 
