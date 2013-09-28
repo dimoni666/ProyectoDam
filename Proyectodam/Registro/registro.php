@@ -90,13 +90,13 @@ if( isset($_POST['str_password2']) )
                 minlength: jQuery.format("Su nombre de usuario como minimo debe tener {0} caracteres.")
             },
             tx_password: {
-                required: "Por favor, escriba una contraseña.",
-                minlength: jQuery.format("Su contraseña como minimo debe tener {0} caracteres.")
+                required: "Por favor, escriba una contraseï¿½a.",
+                minlength: jQuery.format("Su contraseï¿½a como minimo debe tener {0} caracteres.")
             },
             tx_password2: {
-                required: "Por favor, repita la contraseña anterior.",
-                minlength: jQuery.format("Su contraseña como minimo debe tener {0} caracteres."),
-                equalTo: "Por favor, repita la contraseña anterior.",
+                required: "Por favor, repita la contraseï¿½a anterior.",
+                minlength: jQuery.format("Su contraseï¿½a como minimo debe tener {0} caracteres."),
+                equalTo: "Por favor, repita la contraseï¿½a anterior.",
             }
  
         }
@@ -168,7 +168,7 @@ if( isset($_POST['str_password2']) )
     <tr>
         <td><label for="tx_correo">Correo electronico</label></td>
         <td>
-            <input type="text" name="tx_correo" id="tx_correo"  value='<?php echo $str_correo ?>' size="30"  maxlength="20" />
+            <input type="text" name="tx_correo" id="tx_correo"  value='<?php echo $str_correo ?>' size="30"  maxlength="50" />
         </td>
     </tr>
     <tr>
