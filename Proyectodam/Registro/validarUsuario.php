@@ -32,7 +32,7 @@
          
         //Crear un formulario para redireccionar al usuario y enviar oculto su Id 
 ?>
-        <form name="formulario" method="post" action="http://www.elantrodelrap.vv.si">
+        <form name="formulario" method="post" action="../index.php">
             <input type="hidden" name="idUsr" value='<?php echo $uid ?>' />
         </form>
 <?php
@@ -47,7 +47,7 @@
             <input type="hidden" name="msg_error" value="1">
         </form>
 <?php
-		echo $sql;
+		
     }
 ?>
                      
