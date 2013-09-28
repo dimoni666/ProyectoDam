@@ -32,7 +32,7 @@
          
         //Crear un formulario para redireccionar al usuario y enviar oculto su Id 
 ?>
-        <form name="formulario" method="post" action="../index.html">
+        <form name="formulario" method="post" action="../index.php">
             <input type="hidden" name="idUsr" value='<?php echo $uid ?>' />
         </form>
 <?php
