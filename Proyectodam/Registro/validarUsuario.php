@@ -43,7 +43,7 @@
         //..Crear un formulario para redireccionar al usuario a la pagina de login 
         //enviandole un codigo de error
 ?>
-        <form name="formulario" method="post" action="index.php">
+        <form name="formulario" method="post" action="index.html">
             <input type="hidden" name="msg_error" value="1">
         </form>
 <?php
