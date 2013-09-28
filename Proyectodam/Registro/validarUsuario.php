@@ -10,7 +10,7 @@
     //Obtengo la version encriptada del password
     $pw_enc = md5($pw);
      
-    $sql = "SELECT id FROM usuarios
+    $sql = "SELECT id FROM tbl_users
             WHERE nickname = '".$usr."'
             AND password = '".$pw_enc."' ";  
     $result     =mysql_query($sql,$conexio); 
