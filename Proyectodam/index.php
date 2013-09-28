@@ -39,7 +39,7 @@ Ese lenguaje y esa cadencia particular se sustentan en una actitud contestataria
 	</div>
     <div id="sesion">
     <?php
-    	if ($_SESSION['autenticado'] == "SI") {
+    	if (isset($_SESSION['autenticado']) and ($_SESSION['autenticado'] == "SI")) {
     		echo "Hola, " . $_SESSION['uid'];
     		echo '<a href="Registro/cerrarSesion.php">Cerrar sesi&oacute;n</a>';
     	} else {
