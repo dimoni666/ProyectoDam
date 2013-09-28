@@ -39,9 +39,13 @@ Ese lenguaje y esa cadencia particular se sustentan en una actitud contestataria
 	</div>
     <div id="sesion">
     <?php
-		echo '<p><a href="Registro/index.php"> Iniciar sesion </a></p>';
-
-		echo '<a href="Registro/cerrarSesion.php">Cerrar sesi&oacute;n</a>';
+    	if ($_SESSION['autenticado'] == "SI") {
+    		echo "Hola, $_SESSION['uid']";
+    		echo '<a href="Registro/cerrarSesion.php">Cerrar sesi&oacute;n</a>';
+    	} else {
+			echo '<p><a href="Registro/index.php"> Iniciar sesion </a></p>';
+    	}
+    	
 ?>
     			
 			</form>
