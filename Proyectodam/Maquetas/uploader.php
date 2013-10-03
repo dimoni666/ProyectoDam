@@ -2,10 +2,10 @@
 
 // $tmpName = $_FILES['uploadedfile']['tmp_name'];
 $data = mysql_real_escape_string(file_get_contents($_FILES['uploadedfile']['tmp_name'], 'rb'));
- $elUsr = "u164867912_kase";
-    $elPw  = "ceroca00";
-    $elServer ="mysql.hostinger.es";
-    $laBd = "u164867912_adr";
+ 	$elUsr = "jaume";
+    $elPw  = "j1a5um2e";
+    $elServer ="localhost";
+    $laBd = "base1";
 
 if((isset($_POST['maquetas'])) && preg_match("/.*rar/",$_FILES['uploadedfile']['type'])){
 
