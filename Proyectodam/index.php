@@ -10,11 +10,8 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
 	<body>
-		<div id="logo">
-			<img src="LogoFinal.jpg" id=foto1 />
-		</div>
 		<div id="letras">
-			<img src="titulo1.png" id=foto2 />
+			<img src="../Comun/Imagenes/logo.png" id=foto2 />
 		</div>
 		<div id="menu">
 		<ul>

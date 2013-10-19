@@ -2,21 +2,12 @@ body{
 	background-image:url(bg01.jpg);
 	background-repeat:no-repeat;
 }
-div#logo{
-	width: 120px;
-	height: 120px;
-	
-}
-div#foto1{
-	width: 120px;
-	height: 120px;
-}
 
 div#letras{
 	width:600px;
 	height: 200px;
 	position:absolute;
-	left:350px;
+	left:50px;
 	top:0px;
 }
 div#menu{
