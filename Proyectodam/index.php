@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div id="letras">
-			<img src="../Comun/Imagenes/logo.png" id=foto2 />
+			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
 		<div id="menu">
 		<ul>
