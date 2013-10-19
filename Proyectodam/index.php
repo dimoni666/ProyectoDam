@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div id="logo">
-			<img src="logo1.png" id=foto1 />
+			<img src="LogoFinal.jpg" id=foto1 />
 		</div>
 		<div id="letras">
 			<img src="titulo1.png" id=foto2 />
