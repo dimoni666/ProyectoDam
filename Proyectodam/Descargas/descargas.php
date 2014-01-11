@@ -36,8 +36,8 @@ $sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
 
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
     	echo "Titulo:".$row["titulo"]."<br>";
-    	echo "Titulo:".$row["ano"]."<br>";
-    	echo "Titulo:".$row["artista"]."<br>";
+    	echo "Ano:".$row["ano"]."<br>";
+    	echo "Artista:".$row["artista"]."<br>";
 	}
 
 ?>
