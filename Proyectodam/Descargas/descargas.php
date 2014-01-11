@@ -19,7 +19,7 @@
 			<li><a href="../Info/info.html">Contacta</a></li>
 			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
 			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			<li><a href="../Descargas/descargas.html">Descargas</a></li>
+			<li><a href="../Descargas/descargas.php">Descargas</a></li>
            <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
 		</ul>
 		</div>
@@ -35,7 +35,7 @@ $sql="SELECT titulo FROM temas";
 	$resultado = mysql_query($sql) or die(mysql_error());
 
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
-    	echo "Titulo:$row["titulo"]<br>";
+    	echo "Titulo:"+$row["titulo"]+"<br>";
 	}
 
 ?>
