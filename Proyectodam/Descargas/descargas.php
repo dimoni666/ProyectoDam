@@ -24,7 +24,7 @@
 		</ul>
 		</div>
 <?php
-$sql="SELECT titulo,ano,artistas FROM temas ORDER BY artistas";
+$sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
 
  	$elUsr = "jaume";
     $elPw  = "j1a5um2e";
