@@ -21,7 +21,7 @@
 			<li><a href="../Info/info.html">Contacta</a></li>
 			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
 			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			<li><a href="../Descargas/descargas.html">Descargas</a></li>
+			<li><a href="../Descargas/descargas.php">Descargas</a></li>
            <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
 		</ul>
 		</div>

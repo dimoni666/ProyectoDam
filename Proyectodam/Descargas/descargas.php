@@ -35,7 +35,7 @@ $sql="SELECT titulo FROM temas";
 	$resultado = mysql_query($sql) or die(mysql_error());
 
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
-    	echo "Titulo:"+$row["titulo"]+"<br>";
+    	echo "Titulo:".$row["titulo"]."<br>";
 	}
 
 ?>
