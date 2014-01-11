@@ -10,7 +10,7 @@ $data = mysql_real_escape_string(file_get_contents($_FILES['uploadedfile']['tmp_
 if((isset($_POST['maquetas'])) && preg_match("/.*rar/",$_FILES['uploadedfile']['type'])){
 
 	$titulo = $_POST['titulo'];
-	$artistas = $_POST['artistas'];
+	$artistas = $_POST['artista'];
 	$ano = $_POST['ano'];
 	$productor = $_POST['productor'];
 	$ciudad = $_POST['cuidad'];
@@ -19,7 +19,7 @@ if((isset($_POST['maquetas'])) && preg_match("/.*rar/",$_FILES['uploadedfile']['
 }elseif((isset($_POST['graffitis'])) && (preg_match("/.*jpeg/",$_FILES['uploadedfile']['type']) || preg_match("/.*png/",$_FILES['uploadedfile']['type']) || preg_match("/.*gif/",$_FILES['uploadedfile']['type']))){
 
 	$titulo = $_POST['titulo'];
-	$artistas = $_POST['artistas'];
+	$artistas = $_POST['artista'];
 	$ano = $_POST['ano'];
 	$ciudad = $_POST['cuidad'];
 	$estilo = $_POST['estilo'];
