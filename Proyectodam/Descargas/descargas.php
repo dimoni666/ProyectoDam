@@ -23,6 +23,7 @@
            <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
 		</ul>
 		</div>
+<div id="contenido">
 <?php
 $sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
 
@@ -33,13 +34,21 @@ $sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
 	$conexio = mysql_connect($elServer, $elUsr, $elPw) or die (mysql_error());
 	mysql_select_db($laBd, $conexio ) or die (mysql_error());
 	$resultado = mysql_query($sql) or die(mysql_error());
-
+		echo "<TABLE BORDER>";
+		echo "<TR>";
+		echo "<TD>Titulo</TD>";
+		echo "<TD>Ano</TD>";
+		echo "<TD>Artista</TD>";
+		echo "</TR>";
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
-    	echo "Titulo:".$row["titulo"]."<br>";
-    	echo "Ano:".$row["ano"]."<br>";
-    	echo "Artista:".$row["artista"]."<br>";
+		echo "<TR>";
+    	echo "<TD>".$row["titulo"]."</TD>";
+    	echo "<TD>".$row["ano"]."</TD>";
+    	echo "<TD>".$row["artista"]."</TD>";
+    	echo "</TR>";
 	}
-
+		echo"</TABLE>";
 ?>
+</div>
  </body>
 </html>
