@@ -25,7 +25,7 @@
 		</div>
 <div id="contenido">
 <?php
-$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
+
 
  	$elUsr = "jaume";
     $elPw  = "j1a5um2e";
@@ -33,16 +33,22 @@ $sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
     $laBd = "base1";
 	$conexio = mysql_connect($elServer, $elUsr, $elPw) or die (mysql_error());
 	mysql_select_db($laBd, $conexio ) or die (mysql_error());
-	$resultado = mysql_query($sql) or die(mysql_error());
+	
 	if (isset($_GET["id"])){
-		echo"Nos han pedido un archivo";	
+		$id=$_GET["id"];
+	$sql ="select titulo, tamano, tipo, tema from temas where ID = '$id'";
+	$resultado = mysql_query($sql) or die(mysql_error());
+	$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
+		echo"Nos han pedido ".$row["titulo"];	
 	}else{
+		$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
 		echo "<TABLE BORDER>";
 		echo "<TR>";
 		echo "<TD>Titulo</TD>";
 		echo "<TD>Ano</TD>";
 		echo "<TD>Artista</TD>";
 		echo "</TR>";
+		$resultado = mysql_query($sql) or die(mysql_error());
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
 		echo "<TR>";
     	echo "<TD><a href=\"descargas.php?id=".$row["ID"]."\">".$row["titulo"]."</a></TD>";
