@@ -25,7 +25,7 @@
 		</div>
 <div id="contenido">
 <?php
-$sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
+$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
 
  	$elUsr = "jaume";
     $elPw  = "j1a5um2e";
@@ -42,7 +42,7 @@ $sql="SELECT titulo,ano,artista FROM temas ORDER BY artista";
 		echo "</TR>";
 	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
 		echo "<TR>";
-    	echo "<TD>".$row["titulo"]."</TD>";
+    	echo "<TD><a href="descargas.php?id=".$row["id"]>".$row["titulo"]."</a></TD>";
     	echo "<TD>".$row["ano"]."</TD>";
     	echo "<TD>".$row["artista"]."</TD>";
     	echo "</TR>";
