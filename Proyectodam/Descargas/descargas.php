@@ -34,6 +34,9 @@ $sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
 	$conexio = mysql_connect($elServer, $elUsr, $elPw) or die (mysql_error());
 	mysql_select_db($laBd, $conexio ) or die (mysql_error());
 	$resultado = mysql_query($sql) or die(mysql_error());
+	if (isset($_GET["id"])){
+		echo"Nos han pedido un archivo";	
+	}else{
 		echo "<TABLE BORDER>";
 		echo "<TR>";
 		echo "<TD>Titulo</TD>";
@@ -48,6 +51,7 @@ $sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
     	echo "</TR>";
 	}
 		echo"</TABLE>";
+		}
 ?>
 </div>
  </body>
