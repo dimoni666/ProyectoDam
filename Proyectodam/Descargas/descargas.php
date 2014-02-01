@@ -41,7 +41,7 @@
 	$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
 	header("Content-length: ".$row['tamano']);
 	header("Content-type: ".$row['tipo']);
- 	header("Content-Disposition: attachment; filename='".$row['titulo'].".mp3'");
+ 	header("Content-Disposition: attachment;  filename='".addslashes($row['titulo']).".mp3'");
  	echo $row['tema'];
 	}else{
 		$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
