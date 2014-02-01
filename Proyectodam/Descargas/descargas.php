@@ -39,9 +39,9 @@
 	$sql ="select titulo, tamano, tipo, tema from temas where ID = '$id'";
 	$resultado = mysql_query($sql) or die(mysql_error());
 	$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
-	header("Content-length: $row['tamano']");
-	header("Content-type: $row['tipo']");
- 	header("Content-Disposition: attachment; filename=$row['titulo']");
+	header("Content-length: ".$row['tamano']);
+	header("Content-type: ".$row['tipo']);
+ 	header("Content-Disposition: attachment; filename=".$row['titulo']);
  	echo $row['tema'];
 	}else{
 		$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
