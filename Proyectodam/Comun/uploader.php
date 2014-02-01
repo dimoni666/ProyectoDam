@@ -27,7 +27,7 @@ if((isset($_POST['maquetas'])) && preg_match("/.*rar/",$file_type)){
 	$estilo = $_POST['estilo'];
 	$sql = "INSERT INTO graffitis (titulo, artista, ano, ciudad, estilo, tamano, tipo, graff) VALUES('$titulo','$artistas',$ano,'$ciudad','$estilo','$file_size','$file_type','$data');";
 
-}elseif((isset($_POST['temas'])) && preg_match("/.*mp3/",$file_type)){
+}elseif((isset($_POST['temas'])) && (preg_match("/.*mp3/",$file_type) || preg_match("/.*mpeg/",$file_type))){
 
 	$titulo = $_POST['titulo'];
 	$ano = $_POST['ano'];
