@@ -7,10 +7,10 @@ ul#submenu{
 	display:none;
 	position:absolute;
 }
-.submenu > li{
+li#submenu{
 	float:left;
 }
-.submenu li:hover > ul{
+#submenu li:hover > ul{
 	display:block;
 }
 
