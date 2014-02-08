@@ -8,7 +8,7 @@ body{
 	position:absolute;
 	float:left;
 }
-.submenu li:hover{
+.submenu li:hover > ul{
 	display:block;
 }
 
