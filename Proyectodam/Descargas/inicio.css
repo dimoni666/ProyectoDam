@@ -3,7 +3,7 @@ body{
 	background-repeat:no-repeat;
 }
 
-.submenu ul{
+ul#submenu{
 	display:none;
 	position:absolute;
 }
