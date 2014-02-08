@@ -3,6 +3,15 @@ body{
 	background-repeat:no-repeat;
 }
 
+#submenu ul{
+	display:none;
+	position:absolute;
+	
+}
+.submenu li:hover{
+	display:block;
+}
+
 div#letras{
 	width:600px;
 	height: 200px;
