@@ -6,6 +6,8 @@ body{
 .submenu ul{
 	display:none;
 	position:absolute;
+}
+.submenu > li{
 	float:left;
 }
 .submenu li:hover > ul{
