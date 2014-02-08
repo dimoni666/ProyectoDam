@@ -3,15 +3,16 @@ body{
 	background-repeat:no-repeat;
 }
 
-ul#submenu{
-	display:none;
-	position:absolute;
+ #menu ul#submenu{
+        position:absolute;
+        visibility: hidden;
 }
-li#submenu{
-	float:left;
-}
-#submenu li:hover > ul{
-	display:block;
+
+#menu li:hover #submenu{
+        display: block;
+        visibility: visible;
+        top:100%;
+        width:120px;
 }
 
 div#letras{
