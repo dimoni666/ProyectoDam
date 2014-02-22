@@ -2,7 +2,17 @@ body{
 	background-image:url(../Comun/Imagenes/bg01.jpg);
 	background-repeat:no-repeat;
 }
+#menu ul#submenu{
+        position:absolute;
+        visibility: hidden;
+}
 
+#menu li:hover #submenu{
+        display: block;
+        visibility: visible;
+        top:100%;
+        width:120px;
+}
 div#letras{
 	width:600px;
 	height: 200px;
