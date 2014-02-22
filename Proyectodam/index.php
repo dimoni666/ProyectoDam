@@ -21,7 +21,7 @@
 			<li><a href="../Info/info.html">Contacta</a></li>
 			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
 			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-				<li><a href="../Descargas/descargas.php">Descargas</a>
+			<li><a href="../Descargas/descargas.php">Descargas</a>
 			 <ul id="submenu">
                                 <li id="submenu">Maquetas</li>
                                 <li id="submenu">Canciones</li>
