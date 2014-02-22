@@ -45,12 +45,15 @@
 		switch ($_GET["sd"]){
 			case "M":
 			$sql ="select titulo, tamano, tipo, fichero  from maquetas where ID = '$id'";
+			$campo = "fichero";
 			break;
 			case "C": 
 			$sql ="select titulo, tamano, tipo, tema from temas where ID = '$id'";
+			$campo = "tema";
 			break;
 			case "G": 
 			$sql ="select titulo, tamano, tipo, graff from graffitis where ID = '$id'";
+			$campo = "graff";
 			break;
 		}
 		$resultado = mysql_query($sql) or die(mysql_error());
@@ -66,8 +69,8 @@
 			"application/rar" => "rar",
 			);
 		$extension = $extensiones[$row['tipo']];
- 		header("Content-Disposition: attachment;filename=".str_replace(" ","_",$row['titulo']).".".$extension);
- 		echo $row['tema'];
+ 		header("Content-Disposition: attachment;filename =".str_replace(" ","_",$row['titulo']).".".$extension);
+ 		echo $row[$campo];
 	}else{
 		switch ($_GET["sd"]){
 			case "M":
