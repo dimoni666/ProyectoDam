@@ -12,20 +12,20 @@ $data = mysql_real_escape_string(file_get_contents($_FILES['uploadedfile']['tmp_
 if((isset($_POST['maquetas'])) && preg_match("/.*rar/",$file_type)){
 
 	$titulo = $_POST['titulo'];
-	$artistas = $_POST['artista'];
+	$artistas = $_POST['artistas'];
 	$ano = $_POST['ano'];
 	$productor = $_POST['productor'];
 	$ciudad = $_POST['cuidad'];
-	$sql = "INSERT INTO maquetas (titulo, artista, ano, productor, ciudad, tamano, tipo, fichero) VALUES('$titulo','$artistas',$ano,'$productor','$ciudad','$file_size','$file_type','$data');";
+	$sql = "INSERT INTO maquetas (titulo, artistas, ano, productor, ciudad, tamano, tipo, fichero) VALUES('$titulo','$artistas',$ano,'$productor','$ciudad','$file_size','$file_type','$data');";
 
 }elseif((isset($_POST['graffitis'])) && (preg_match("/.*jpeg/",$file_type) || preg_match("/.*png/",$file_type) || preg_match("/.*gif/",$file_type))){
 
 	$titulo = $_POST['titulo'];
-	$artistas = $_POST['artista'];
+	$artistas = $_POST['artistas'];
 	$ano = $_POST['ano'];
 	$ciudad = $_POST['cuidad'];
 	$estilo = $_POST['estilo'];
-	$sql = "INSERT INTO graffitis (titulo, artista, ano, ciudad, estilo, tamano, tipo, graff) VALUES('$titulo','$artistas',$ano,'$ciudad','$estilo','$file_size','$file_type','$data');";
+	$sql = "INSERT INTO graffitis (titulo, artistas, ano, ciudad, estilo, tamano, tipo, graff) VALUES('$titulo','$artistas',$ano,'$ciudad','$estilo','$file_size','$file_type','$data');";
 
 }elseif((isset($_POST['temas'])) && (preg_match("/.*mp3/",$file_type) || preg_match("/.*mpeg/",$file_type))){
 

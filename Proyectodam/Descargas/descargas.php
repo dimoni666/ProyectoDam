@@ -47,7 +47,7 @@
 	$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
 	header("Content-length: ".$row['tamano']);
 	header("Content-type: ".$row['tipo']);
- 	header("Content-Disposition: attachment;  filename=".str_replace(" ","_",$row['titulo']).".mp3");
+ 	header("Content-Disposition: attachment;filename=".str_replace(" ","_",$row['titulo']).".mp3");
  	echo $row['tema'];
 	}else{
 		switch ($_GET["sd"]){
