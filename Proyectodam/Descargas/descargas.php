@@ -22,8 +22,8 @@
 			<li>Descargas
 			 <ul id="submenu">
                                 <li id="submenu"><a href="../Descargas/descargas.php?sd=M">Maquetas</a></li>
-                                <li id="submenu">><a href="../Descargas/descargas.php?sd=C">Canciones</a></li>
-                                <li id="submenu">><a href="../Descargas/descargas.php?sd=G">Graffittis</a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C">Canciones</a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G">Graffittis</a></li>
                         </ul>
 			</li>
            <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
@@ -71,11 +71,12 @@
 			$i++;
 		}
 		echo "</TR>";
-		while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
+		while ($row = mysql_fetch_array($resultado, MYSQL_NUM)) {
 			echo "<TR>";
-    		echo "<TD><a href=\"descargas.php?id=".$row["ID"]."\">".$row["titulo"]."</a></TD>";
-    		echo "<TD>".$row["ano"]."</TD>";
-    		echo "<TD>".$row["artista"]."</TD>";
+    		echo "<TD><a href=\"descargas.php?id=".$row[0]."\">".$row[1]."</a></TD>";
+    		for ($x=2;$x<count($row);$x++){
+    			echo "<TD>".$row[$x]."</TD>";
+    		}
     		echo "</TR>";
 		}
 		echo"</TABLE>";
