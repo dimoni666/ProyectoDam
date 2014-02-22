@@ -6,6 +6,7 @@ body{
  #menu ul#submenu{
         position:absolute;
         visibility: hidden;
+        margin-top: 10px;
 }
 
 #menu li:hover #submenu{
@@ -13,6 +14,7 @@ body{
         visibility: visible;
         top:100%;
         width:120px;
+        
 }
 
 div#letras{
@@ -58,7 +60,7 @@ div#sesion{
  list-style-type: none;
  width: 100%;
  margin: 0;
- padding: 0px;
+ padding: 10px;
  overflow: hidden;
  display: table;
  margin-top: 1em;
