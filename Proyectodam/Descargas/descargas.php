@@ -19,11 +19,11 @@
 			<li><a href="../Info/info.html">Contacta</a></li>
 			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
 			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			<li><a href="../Descargas/descargas.php">Descargas</a>
+			<li>Descargas
 			 <ul id="submenu">
-                                <li id="submenu">Maquetas</li>
-                                <li id="submenu">Canciones</li>
-                                <li id="submenu">Graffittis</li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M">Maquetas</a></li>
+                                <li id="submenu">><a href="../Descargas/descargas.php?sd=C">Canciones</a></li>
+                                <li id="submenu">><a href="../Descargas/descargas.php?sd=G">Graffittis</a></li>
                         </ul>
 			</li>
            <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
@@ -50,23 +50,35 @@
  	header("Content-Disposition: attachment;  filename=".str_replace(" ","_",$row['titulo']).".mp3");
  	echo $row['tema'];
 	}else{
-		$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
+		switch ($_GET["sd"]){
+			case "M":
+			$sql="SELECT ID,titulo,ano,artistas,ciudad FROM maquetas ORDER BY artistas";
+			break;
+			case "C": 
+			$sql="SELECT ID,titulo,ano,artista FROM temas ORDER BY artista";
+			break;
+			case "G": 
+			$sql="SELECT ID,titulo,ano,artistas,ciudad FROM graffitis ORDER BY artistas";
+			break;
+		}
+		$resultado = mysql_query($sql) or die(mysql_error());
+		$i = 0;
 		echo "<TABLE BORDER>";
 		echo "<TR>";
-		echo "<TD>Titulo</TD>";
-		echo "<TD>Ano</TD>";
-		echo "<TD>Artista</TD>";
-		echo "</TR>";
-		$resultado = mysql_query($sql) or die(mysql_error());
-	while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
-		echo "<TR>";
-    	echo "<TD><a href=\"descargas.php?id=".$row["ID"]."\">".$row["titulo"]."</a></TD>";
-    	echo "<TD>".$row["ano"]."</TD>";
-    	echo "<TD>".$row["artista"]."</TD>";
-    	echo "</TR>";
-	}
-		echo"</TABLE>";
+		while ($i < mysql_num_fields($resultado)) {
+			$metadatos = mysql_fetch_field($resultado, $i);
+			echo "<TD>".ucfirst($metadatos->name)."</TD>";
 		}
+		echo "</TR>";
+		while ($row = mysql_fetch_array($resultado, MYSQL_ASSOC)) {
+			echo "<TR>";
+    		echo "<TD><a href=\"descargas.php?id=".$row["ID"]."\">".$row["titulo"]."</a></TD>";
+    		echo "<TD>".$row["ano"]."</TD>";
+    		echo "<TD>".$row["artista"]."</TD>";
+    		echo "</TR>";
+		}
+		echo"</TABLE>";
+	}
 ?>
 </div>
  </body>
