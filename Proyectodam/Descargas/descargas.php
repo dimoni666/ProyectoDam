@@ -42,13 +42,32 @@
 	
 	if (isset($_GET["id"])){
 		$id=$_GET["id"];
-	$sql ="select titulo, tamano, tipo, tema from temas where ID = '$id'";
-	$resultado = mysql_query($sql) or die(mysql_error());
-	$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
-	header("Content-length: ".$row['tamano']);
-	header("Content-type: ".$row['tipo']);
- 	header("Content-Disposition: attachment;filename=".str_replace(" ","_",$row['titulo']).".mp3");
- 	echo $row['tema'];
+		switch ($_GET["sd"]){
+			case "M":
+			$sql ="select titulo, tamano, tipo, fichero  from maquetas where ID = '$id'";
+			break;
+			case "C": 
+			$sql ="select titulo, tamano, tipo, tema from temas where ID = '$id'";
+			break;
+			case "G": 
+			$sql ="select titulo, tamano, tipo, graff from graffitis where ID = '$id'";
+			break;
+		}
+		$resultado = mysql_query($sql) or die(mysql_error());
+		$row = mysql_fetch_array($resultado, MYSQL_ASSOC);
+		header("Content-length: ".$row['tamano']);
+		header("Content-type: ".$row['tipo']);
+		$extensiones = array(
+			"image/jpeg" => "jpg",
+			"image/png" => "png",
+			"image/gif" => "gif",
+			"audio/mpeg" => "mp3",
+			"audio/mp3" => "mp3",
+			"application/rar" => "rar",
+			);
+		$extension = $extensiones[$row['tipo']];
+ 		header("Content-Disposition: attachment;filename=".str_replace(" ","_",$row['titulo']).".".$extension);
+ 		echo $row['tema'];
 	}else{
 		switch ($_GET["sd"]){
 			case "M":
@@ -75,7 +94,7 @@
 		echo "</TR>";
 		while ($row = mysql_fetch_array($resultado, MYSQL_NUM)) {
 			echo "<TR>";
-    		echo "<TD><a href=\"descargas.php?id=".$row[0]."\">".$row[1]."</a></TD>";
+    		echo "<TD><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></TD>";
     		for ($x=2;$x<count($row);$x++){
     			echo "<TD>".$row[$x]."</TD>";
     		}
