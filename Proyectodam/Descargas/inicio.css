@@ -68,10 +68,13 @@ div#sesion{
 #menu li {
  display: table-cell;
  text-align: center padding: 2px;
- color: #fff;
+ font-family: Arial;
+  font-size:20px;
+  text-decoration: none;
+  color: #fff;
 }
 
-#menu li {
+#menu li a{
   font-family: Arial;
   font-size:20px;
   text-decoration: none;
