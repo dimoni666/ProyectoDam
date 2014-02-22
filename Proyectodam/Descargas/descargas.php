@@ -67,7 +67,9 @@
 		echo "<TR>";
 		while ($i < mysql_num_fields($resultado)) {
 			$metadatos = mysql_fetch_field($resultado, $i);
-			echo "<TD>".ucfirst($metadatos->name)."</TD>";
+			if ($metadatos->name != "ID"){
+				echo "<TD>".ucfirst($metadatos->name)."</TD>";
+			}
 			$i++;
 		}
 		echo "</TR>";
