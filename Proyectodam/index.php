@@ -21,7 +21,6 @@
 			<li><a href="../Info/info.html">Contacta</a></li>
 			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
 			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			<li><a href="../Descargas/descargas.php">Descargas</a>
 			 <li>Descargas
 			 <ul id="submenu">
                                 <li id="submenu"><a href="../Descargas/descargas.php?sd=M">Maquetas</a></li>
