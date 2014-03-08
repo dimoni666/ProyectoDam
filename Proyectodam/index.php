@@ -10,6 +10,12 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
 	<body>
+	<?php 
+	include 'Comun/idiomas/SpaXML.php';
+	
+	$idioma = new SimpleXMLElement($xmlstr);
+	
+	?>
 	<div id="idiomas">
 	<img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat />
 	<img src="../Comun/Imagenes/boton_bandera_espanola.png" id=fotoSP />
@@ -19,7 +25,7 @@
 		</div>
 		<div id="menu">
 		<ul>
-			<li><a href="../index.php">Home</a></li>
+			<li><a href="../index.php"><?php  echo $idioma->Menu[0]->uno;?></a></li>
 			<li><a href="../Canciones/canciones.html">Canciones</a></li>
 			<li><a href="../Maquetas/maquetas.html">Maquetas</a></li>
 			<li><a href="../Info/info.html">Contacta</a></li>
