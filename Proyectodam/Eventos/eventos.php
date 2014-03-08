@@ -36,8 +36,8 @@
 		</ul>
 		</div>
 	<div id="contenido">
-    	<?php $idioma->Eventos->texto ?>
-			<h1><?php echo $idioma->Eventos->titulo ?>S</h1>
+    	<?php echo $idioma->Eventos->texto ?>
+			<h1><?php echo $idioma->Eventos->titulo ?></h1>
 	<img src="17-06-2013.png" alt="Atrevete" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
     		   <?php echo $idioma->Eventos->evento1?>
 	  <img src="13-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; top:100px;"/>

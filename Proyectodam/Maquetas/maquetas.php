@@ -36,7 +36,7 @@
 		</ul>
 		</div>
 	<div id="contenido">
-		<h2>T <?php echo $idioma->maquetas->textomaq ?></h2>
+		<h2><?php echo $idioma->maquetas->textomaq ?></h2>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
 <input type="hidden" name="maquetas" value="true" />
  <?php echo $idioma->comundes->titulo ?>  &nbsp; &nbsp; <input type="text" name="titulo" id="titulo" size="30" /><br />
