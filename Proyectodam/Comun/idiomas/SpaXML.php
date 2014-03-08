@@ -22,6 +22,8 @@ $xmlstr = <<<XML
 		<año>Año:</año>
 		<artista>Artista:</artista>
 		<ciudad>Ciudad:</ciudad>
+		<style>Estilo:</style>
+		<ficheroup>Fichero a subir: </ficheroup>
 	</comundes>
 	<contenido>
 		<inicio>
@@ -37,6 +39,7 @@ $xmlstr = <<<XML
 			<textomaq>Tienes un grupo? harto de no saber que hacer con tus canciones? Subelas y si nos gustan tendras un sitio en nuestros eventos!</textomaq>
 		</maquetas>
 		<contacta>
+			<cabecera>Contacta con nosotros</cabecera>
 			<titulocont>Alguna Pregunta?????!!!!</titulocont>
 			<textocont>Quieres hacerte socio del local? Podeis disfrutar de nuestro local y sus instalaciones, y si quedan dudas, no dudeis en enviar un MAIL!
 			Además si eres usuario nos puedes enviar un mail para pedirnos que cambiemos cualquier 
@@ -50,6 +53,8 @@ $xmlstr = <<<XML
 			<estiloform>Estilo:</estiloform>
 		</graffiti>
 		<Eventos>
+			<titulo></titulo>
+			<texto></texto>
 			<evento1> 17/06/2013: Para los amantes de los graffitis este sabado podrán demostrar sus habilidades en nuestro local, tendremos un muro muy especial en el que podreis dar rienda suelta a vuestras habilidades con el spray. Se dispondra de 30 minutos para realizar el dibujo y una gama de 10 colores para poder utilizar.</evento1>
 			<evento2> 13/06/2013: Afinad vuestras gargantas porque ya está aquí el torneo de los torneos del rap. Habrán dos fases eliminatorias para llegar a la final. La primera fase sera de freestyle de 60 segundos cada ronda de cada participante, la segunda fase sera con la canción mas votada en la página web. </evento2>
 			<evento3> 21/06/2013: Que sería de todos nosotros sin nuestros queridos DJ's...NADA!!! Por ello queremos organizar un "especial" para ellos dónde podrán demostrar sus habilidades rayando los discos. En esta ocasión se permitirá participar sin ser usuario con bases subidas. Los que no sean usuarios de la página nos tendrán que enviar un mail con los datos personales(dni, nombre, apellidos, nºmovil) y con almenos dos bases. Os responderemos en la mayor brevedad posible con la confirmación de la invitación al evento. </evento3>
@@ -78,6 +83,9 @@ $xmlstr = <<<XML
 	<cerrar>Cerrar sesión</cerrar>
 	<iniciar>Iniciar sesión</iniciar>
 	</logged>
+	<canciones>
+		<titulo>Cuelga aqui tu musica, y pronto la podras oir en el reproductor!</titulo>
+	</canciones>
 </proyecto>
 XML;
 ?>

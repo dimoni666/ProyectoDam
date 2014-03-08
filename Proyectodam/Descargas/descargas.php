@@ -51,25 +51,31 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
  	<body>
+ 	<?php 
+	include 'Comun/idiomas/SpaXML.php';
+	
+	$idioma = new SimpleXMLElement($xmlstr);
+	
+	?>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
-		<div id="menu">
+			<div id="menu">
 		<ul>
-			<li><a href="../index.php">Home</a></li>
-			<li><a href="../Canciones/canciones.html">Canciones</a></li>
-			<li><a href="../Maquetas/maquetas.html">Maquetas</a></li>
-			<li><a href="../Info/info.html">Contacta</a></li>
-			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
-			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			<li>Descargas
+			<li><a href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
+			<li><a href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
+			<li><a href="../Maquetas/maquetas.php"><?php  echo $idioma->Menu->tres;?></a></li>
+			<li><a href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
+			<li><a href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
+			<li><a href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
+			 <li><?php  echo $idioma->Menu->siete;?>
 			 <ul id="submenu">
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M">Maquetas</a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C">Canciones</a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G">Graffittis</a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G"><?php  echo $idioma->submenu->tres;?></a></li>
                         </ul>
 			</li>
-           <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
+           <li><a href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
 		</ul>
 		</div>
 <div id="contenido">
@@ -88,7 +94,7 @@
 		$resultado = mysql_query($sql) or die(mysql_error());
 		$i = 0;
 		echo "<TABLE BORDER>";
-		echo "<TR>";
+		/**echo "<TR>"; // Cabecera de la tabla
 		while ($i < mysql_num_fields($resultado)) {
 			$metadatos = mysql_fetch_field($resultado, $i);
 			if ($metadatos->name != "ID"){
@@ -97,6 +103,7 @@
 			$i++;
 		}
 		echo "</TR>";
+		**/
 		while ($row = mysql_fetch_array($resultado, MYSQL_NUM)) {
 			echo "<TR>";
     		echo "<TD><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></TD>";

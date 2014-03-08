@@ -1,11 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	
 	<head>
 		<link rel="stylesheet" type="text/css" href="inicio.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Bienvenido al Antro del Rap</title>
+		<title>Contacta con nosotros</title>
 		<meta name="author" content="jaume" />
 		<!-- Date: 2013-05-30 -->
 	</head>
@@ -16,14 +14,10 @@
 	$idioma = new SimpleXMLElement($xmlstr);
 	
 	?>
-	<div id="idiomas">
-	<img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat />
-	<img src="../Comun/Imagenes/boton_bandera_espanola.png" id=fotoSP />
-	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
-		<div id="menu">
+			<div id="menu">
 		<ul>
 			<li><a href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
 			<li><a href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
@@ -41,39 +35,17 @@
            <li><a href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
 		</ul>
 		</div>
-		<div id="contenido">
-		<?php
-			if (isset($_GET["resultado"]) and ($_GET["resultado"] == "exito")) {
-		?>
-				<h1><?php $idioma->subidas->completa ?></h1>
-		<?php	
-			}elseif (isset($_GET["resultado"]) and ($_GET["resultado"] == "fallo")){
-		?>
-			<h1><?php $idioma->subidas->fallo ?></h1>
-			<p><?php $idioma->subidas->extension ?></p>
-		<?php
-			}else{
-		?>
-		<h1> <?php  echo $idioma->contenido->inicio->titinicio;?> </h1>
-		<p><?php  echo $idioma->contenido->inicio->textoini;?></p>
-		<?php
-			}
-		?>		
+	<div id="contenido">
+    	<?php $idioma->Eventos->texto ?>
+			<h1><?php $idioma->Eventos->titulo ?>S</h1>
+	<img src="17-06-2013.png" alt="Atrevete" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
+    		   <?php $idioma->Eventos->evento1?>
+	  <img src="13-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; top:100px;"/>
+      	<?php $idioma->Eventos->evento2?>
+     	<img src="21-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
+     	<?php $idioma->Eventos->evento3?>
+       <img src="15-07-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; "/>
+       <?php $idioma->Eventos->evento4?>
 	</div>
-    <div id="sesion">
-    <?php
-    	session_start();
-    	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
-    		echo $idioma->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
-    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->logged->cerrar."</a>";
-    	} else {
-			echo "<a href='Registro/index.php'>".$idioma->logged->iniciar."</a>";
-    	}
-    	
-?>
-    			
-			</form>
-        </div>
 	</body>
 </html>
-
