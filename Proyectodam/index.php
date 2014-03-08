@@ -21,7 +21,6 @@
 	}
 	$idioma = new SimpleXMLElement($xmlstr);
 	?>
-	<div id="idiomas">
 		<div id="CatXML">
 	<a href="#" onClick="window.location.search += '&leng=CatXML';"><img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat/></a>
 		</div>
@@ -30,7 +29,7 @@
 	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
-		</div>
+			</div>
 		<div id="menu">
 		<ul>
 			<li><a href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
