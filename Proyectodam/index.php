@@ -23,11 +23,11 @@
 	$idioma = new SimpleXMLElement($xmlstr);
 	?>
 		<div id="CatXML">
-	<a href="#" onClick="SetGetParameter('leng','CatXML')';"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
+	<a href="#" onClick="SetGetParameter('leng','CatXML');"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
 	height= "25px" id="fotoCat"/></a>
 		</div>
 		<div id="SpaXML">
-	<a href="#" onClick="SetGetParameter('leng','SpaXML')';"><img src="../Comun/Imagenes/boton_bandera_espanola.png" width="25px"
+	<a href="#" onClick="SetGetParameter('leng','SpaXML');"><img src="../Comun/Imagenes/boton_bandera_espanola.png" width="25px"
 	height="25px" id="fotoSP" /></a>
 	</div>
 		<div id="letras">
