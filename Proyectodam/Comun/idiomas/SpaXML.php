@@ -75,8 +75,8 @@ $xmlstr = <<<XML
 	</subidas>
 	<logged>
 	<saludo>Hola</saludo>
-	<cerrar>Cerrar sesisesi&oacute;n</cerrar>
-	<iniciar>Iniciar sesisesi&oacute;n</iniciar>
+	<cerrar>Cerrar sesión</cerrar>
+	<iniciar>Iniciar sesión</iniciar>
 	</logged>
 </proyecto>
 XML;
