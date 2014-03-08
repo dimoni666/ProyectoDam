@@ -11,14 +11,21 @@
 	</head>
 	<body>
 	<?php 
-	include 'Comun/idiomas/SpaXML.php';
+	
 	
 	$idioma = new SimpleXMLElement($xmlstr);
-	
+	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
+		include 'Comun/idiomas/SpaXML.php';
+	}else if(isset($_GET['leng'])){
+		include 'Comun/idiomas/'. $_GET['leng'] .'.php';
+		$_COOKIE[$_GET['leng']];
+	}else if(isset($_COOKIE['leng'])){
+		include 'Comun/idiomas/'.$_COOKIE['leng'].'.php';
+	}
 	?>
 	<div id="idiomas">
-	<img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat />
-	<img src="../Comun/Imagenes/boton_bandera_espanola.png" id=fotoSP />
+	<a href="#" onClick="window.location.search += '&leng=CatXML';"><img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat/></a>
+	<a href="#" onClick="window.location.search += '&leng=SpaXML';"><img src="../Comun/Imagenes/boton_bandera_espanola.png" id=fotoSP/></a>
 	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
