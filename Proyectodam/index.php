@@ -12,7 +12,7 @@
 	<body>
 	<div id="idiomas">
 	<img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat />
-	<img src="../Comun/Imagenes/boton_bandera_española.png" id=fotoSP />
+	<img src="../Comun/Imagenes/boton_bandera_espanola.png" id=fotoSP />
 	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
