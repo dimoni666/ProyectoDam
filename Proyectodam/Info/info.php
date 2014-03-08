@@ -37,8 +37,8 @@
 		</ul>
 		</div>
 	<div id="contenido">
-    	<h1> <?php echo $idioma->contacta->titulocont ?></h1>
-		<p> <?php echo $idioma->contacta->textocont ?></p>
+    	<h1> <?php echo $idioma->contenido->contacta->titulocont ?></h1>
+		<p> <?php echo $idioma->contenido->contacta->textocont ?></p>
 	</div>
 	</body>
 </html>
