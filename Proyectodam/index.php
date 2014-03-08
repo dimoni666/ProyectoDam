@@ -26,19 +26,19 @@
 		<div id="menu">
 		<ul>
 			<li><a href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
-			<li><a href="../Canciones/canciones.html">Canciones</a></li>
-			<li><a href="../Maquetas/maquetas.html">Maquetas</a></li>
-			<li><a href="../Info/info.html">Contacta</a></li>
-			<li><a href="../Graffiti/fotos.html">Graffitis</a></li>
-			<li><a href="../Eventos/eventos.html">Eventos</a></li>
-			 <li>Descargas
+			<li><a href="../Canciones/canciones.html"><?php  echo $idioma->Menu->dos;?></a></li>
+			<li><a href="../Maquetas/maquetas.html"><?php  echo $idioma->Menu->tres;?></a></li>
+			<li><a href="../Info/info.html"><?php  echo $idioma->Menu->cuatro;?></a></li>
+			<li><a href="../Graffiti/fotos.html"><?php  echo $idioma->Menu->cinco;?></a></li>
+			<li><a href="../Eventos/eventos.html"><?php  echo $idioma->Menu->seis;?></a></li>
+			 <li><?php  echo $idioma->Menu->siete;?>
 			 <ul id="submenu">
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M">Maquetas</a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C">Canciones</a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G">Graffittis</a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a></li>
+                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G"><?php  echo $idioma->submenu->tres;?></a></li>
                         </ul>
 			</li>
-           <li><a href="../mediaplayer/reproductor.html" target="_blank">Reproductor</a></li>
+           <li><a href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
 		</ul>
 		</div>
 		<div id="contenido">
@@ -54,11 +54,8 @@
 		<?php
 			}else{
 		?>
-		<h1> La historia del Rap </h1>
-		<p>El rap surge como un estilo musical en los barrios negros y latinos de Nueva York en la década de 1970, como la expresión desde el sonido y las melodías de la cultura hip hop, que agrupa corrientes estéticas como el graffiti, el breakdance o el scratch. Desde allí se lanzó al mundo, tomando diferentes peculiaridades regionales en cada país o continente.
-				Musicalmente hablando, mientras el hip hop propiamente dicho nace desde la música religiosa de origen negro y se funde en gran manera con el funk y el disco, el rap rompe con esta ligazón y se acerca más al breakdance, tomando al mismo tiempo un lenguaje propio.
-				En las primeras presentaciones de grupos de rap, el estilo se sustentaba en las musicas de un Disc Jockey que, utilizando algunas canciones y empleando cortes y mezclas, lograba una composición que funcionaba como fondo sonoro para que pudiese rapear un MC o varios intérpretes al mismo tiempo.
-				Ese lenguaje y esa cadencia particular se sustentan en una actitud contestataria, de una clara tendencia anti-sistema. Pero como toda expresión artística, resulta muy complejo detenerla o congelarla. Es así que los raperos de los años 70 dieron lugar a una expresión más metafórica y compleja desde la lírica en los años 80, que a la vez se manifestó en los ritmos y bases de musica empleadas.</p>
+		<h1> <?php  echo $idioma->contenido->inicio->titinicio;?> </h1>
+		<p><?php  echo $idioma->contenido->inicio->textoini;?></p>
 		<?php
 			}
 		?>		

@@ -3,7 +3,7 @@ $xmlstr = <<<XML
 <?xml version="1.0" encoding="UTF-8" ?>
 <proyecto>
 <Menu>
-	<unoC>Inici</unoC>
+	<uno>Inici</uno>
 	<dos>Cançons</dos>
 	<tres>Maquetes</tres>
 	<cuatro>Contacta</cuatro>
@@ -18,10 +18,10 @@ $xmlstr = <<<XML
 	<tres>Graffittis</tres>
 </submenu>
 <comundes>
-<titulo>Titol:</titulo>
-<año>Any:</año>
-<artista>Artista:</artista>
-<ciudad>Ciutat:</ciudad>
+	<titulo>Titol:</titulo>
+	<año>Any:</año>
+	<artista>Artista:</artista>
+	<ciudad>Ciutat:</ciudad>
 </comundes>
 <contenido>
 <inicio>
