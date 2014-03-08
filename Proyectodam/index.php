@@ -45,12 +45,12 @@
 		<?php
 			if (isset($_GET["resultado"]) and ($_GET["resultado"] == "exito")) {
 		?>
-				<h1>Fichero subido con éxito!</h1>
+				<h1><?php $idioma->subidas->completa ?></h1>
 		<?php	
 			}elseif (isset($_GET["resultado"]) and ($_GET["resultado"] == "fallo")){
 		?>
-			<h1>No se ha podido subir el archivo</h1>
-			<p>Las extensiones que aceptamos son: .rar,.jpg,.png,.gif y .mp3</p>
+			<h1><?php $idioma->subidas->fallo ?></h1>
+			<p><?php $idioma->subidas->extension ?></p>
 		<?php
 			}else{
 		?>

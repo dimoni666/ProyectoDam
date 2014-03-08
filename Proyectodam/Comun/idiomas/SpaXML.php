@@ -69,14 +69,15 @@ $xmlstr = <<<XML
 		</tablagraf>
 	</contenido>
 	<subidas>
-	<completa>Fichero subido con éxito!</completa>
-	<fallo>No se ha podido subir el archivo</fallo>
-	<extension>Las extensiones que aceptamos son: .rar,.jpg,.png,.gif y .mp3</extension>
+		<completa>Fichero subido con éxito!</completa>
+		<fallo>No se ha podido subir el archivo</fallo>
+		<extension>Las extensiones que aceptamos son: .rar,.jpg,.png,.gif y .mp3</extension>
 	</subidas>
 	<logged>
 	<saludo>Hola</saludo>
 	<cerrar>Cerrar sesisesi&oacute;n</cerrar>
 	<iniciar>Iniciar sesisesi&oacute;n</iniciar>
+	</logged>
 </proyecto>
 XML;
 ?>
