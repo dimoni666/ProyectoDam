@@ -1,6 +1,12 @@
 body{
 	background-image:url(../Comun/Imagenes/bg01.jpg);
 	background-repeat:no-repeat;
+	position:Absolute;
+top:0;
+left:0;
+width:100%;
+heigth:100%;
+z-index:-1; 
 }
 
  #menu ul#submenu{
