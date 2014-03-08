@@ -69,6 +69,19 @@ $xmlstr = <<<XML
 			<city>Ciutat</city>
 			<style>Estil</style>
 		</tablagraf>
+		<subidas>
+		<completa>Fichero subido con éxito!</completa>
+		<fallo>No se ha podido subir el archivo</fallo>
+		<extension>Las extensiones que aceptamos son: .rar,.jpg,.png,.gif y .mp3</extension>
+	</subidas>
+	<logged>
+		<saludo>Hola</saludo>
+		<cerrar>Tanca sesió</cerrar>
+		<iniciar>Inicia sesió</iniciar>
+	</logged>
+	<canciones>
+		<titulo>Penja aqui la teva musica, i aviat la podras escoltar al reproductor!</titulo>
+	</canciones>
 	</contenido>
 </proyecto>
 XML;
