@@ -1,3 +1,5 @@
+<?pho
+$xmlstr = <<<XML
 <?xml version="1.0" encoding="UTF-8" ?>
 <proyecto>
 <Menu>
@@ -67,3 +69,5 @@ després d'una petita comprovació et donarem la teva beguda GRATIS!!!! </textoc
 </tablagraf>
 </contenido>
 </proyecto>
+XML;
+?>
