@@ -64,10 +64,10 @@
     <?php
     	session_start();
     	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
-    		echo "Hola, " . $_SESSION["nombre"] . "<br/>";
-    		echo '<a href="Registro/cerrarSesion.php">Cerrar sesi&oacute;n</a>';
+    		echo $idioma->sesion->saludo.", " . $_SESSION["nombre"] . "<br/>";
+    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->sesion->cerrar."</a>";
     	} else {
-			echo '<p><a href="Registro/index.php"> Iniciar sesion </a></p>';
+			echo "<a href='Registro/index.php'>".$idioma->sesion->iniciar."</a>";
     	}
     	
 ?>
