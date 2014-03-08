@@ -37,7 +37,7 @@
 		</ul>
 		</div>
 	<div id="contenido">
-		<h2><?php echo $idioma->graffiti->titulograff ?></h2>
+		<h2><?php echo $idioma->contenido->graffiti->titulograff ?></h2>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
 <input type="hidden" name="graffitis" value="true" />
 <?php echo $idioma->comundes->titulo ?>  &nbsp; &nbsp; <input type="text" name="titulo" id="titulo" size="30" /><br />
