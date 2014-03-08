@@ -9,7 +9,7 @@
 	</head>
 	<body>
 	<?php 
-	include 'Comun/idiomas/SpaXML.php';
+	include '../Comun/idiomas/SpaXML.php';
 	
 	$idioma = new SimpleXMLElement($xmlstr);
 	
