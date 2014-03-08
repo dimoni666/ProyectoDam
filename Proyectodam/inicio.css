@@ -53,7 +53,14 @@ div#sesion{
 	right:50px;
 	top:10px;
 }
-
+div#fotoCat{
+	
+	width: 200px;
+	height: 125px;
+	position: absolute;
+	right : 80px;
+	top: 10px;
+}
 #menu ul {
 
  list-style-type: none;

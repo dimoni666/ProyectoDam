@@ -10,6 +10,10 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
 	<body>
+	<div id="idiomas">
+	<img src="../Comun/Imagenes/boton_bandera_catalana.png" id=fotoCat />
+	<img src="../Comun/Imagenes/boton_bandera_española.png" id=fotoSP />
+	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
