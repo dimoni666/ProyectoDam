@@ -26,8 +26,8 @@
 	height= "25px" id="fotoCat"/></a>
 		</div>
 		<div id="SpaXML">
-	<a href="#" onClick="window.location.search += '&leng=SpaXML';"><img src="../Comun/Imagenes/boton_bandera_espanola.png" width: 25px;
-	height: 25px; id="fotoSP" /></a>
+	<a href="#" onClick="window.location.search += '&leng=SpaXML';"><img src="../Comun/Imagenes/boton_bandera_espanola.png" width="25px"
+	height="25px" id="fotoSP" /></a>
 	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
