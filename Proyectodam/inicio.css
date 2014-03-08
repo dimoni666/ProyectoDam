@@ -53,7 +53,7 @@ div#sesion{
 	right:50px;
 	top:10px;
 }
-img#fotoCat{
+div#fotoCat{
 	
 	width: 25px;
 	height: 25px;
@@ -61,7 +61,7 @@ img#fotoCat{
 	right : 10px;
 	top: 10px;
 }
-img#fotoSP{
+div#fotoSP{
 	
 	width: 25px;
 	height: 25px;
