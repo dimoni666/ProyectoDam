@@ -4,7 +4,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="inicio.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title> <?php $idioma->comundes->cabecera ?></title>
+		<title> <?php echo $idioma->comundes->cabecera ?></title>
 		<meta name="author" content="jaume" />
 		<!-- Date: 2013-05-30 -->
 	</head>
@@ -37,8 +37,8 @@
 		</ul>
 		</div>
 	<div id="contenido">
-    	<h1> <?php $idioma->contacta->titulocont ?></h1>
-		<p> <?php $idioma->contacta->textocont ?></p>
+    	<h1> <?php echo $idioma->contacta->titulocont ?></h1>
+		<p> <?php echo $idioma->contacta->textocont ?></p>
 	</div>
 	</body>
 </html>

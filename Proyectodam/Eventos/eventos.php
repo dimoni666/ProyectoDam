@@ -37,15 +37,15 @@
 		</div>
 	<div id="contenido">
     	<?php $idioma->Eventos->texto ?>
-			<h1><?php $idioma->Eventos->titulo ?>S</h1>
+			<h1><?php echo $idioma->Eventos->titulo ?>S</h1>
 	<img src="17-06-2013.png" alt="Atrevete" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
-    		   <?php $idioma->Eventos->evento1?>
+    		   <?php echo $idioma->Eventos->evento1?>
 	  <img src="13-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; top:100px;"/>
-      	<?php $idioma->Eventos->evento2?>
+      	<?php echo $idioma->Eventos->evento2?>
      	<img src="21-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
-     	<?php $idioma->Eventos->evento3?>
+     	<?php echo $idioma->Eventos->evento3?>
        <img src="15-07-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; "/>
-       <?php $idioma->Eventos->evento4?>
+       <?php echo $idioma->Eventos->evento4?>
 	</div>
 	</body>
 </html>

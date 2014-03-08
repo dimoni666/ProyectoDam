@@ -36,14 +36,14 @@
 		</ul>
 		</div>
 	<div id="contenido">
-		<h2>T <?php $idioma->maquetas->textomaq ?></h2>
+		<h2>T <?php echo $idioma->maquetas->textomaq ?></h2>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
 <input type="hidden" name="maquetas" value="true" />
- <?php $idioma->comundes->titulo ?>  &nbsp; &nbsp; <input type="text" name="titulo" id="titulo" size="30" /><br />
- <?php $idioma->comundes->año ?>  &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="ano" id="ano" size="30" /><br />
- <?php $idioma->comundes->artista ?>  &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
- <?php $idioma->comundes->ciudad ?> &nbsp;&nbsp;<input type="text" name="ciudad" id="ciudad" size="30" /><br />
- <?php $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
+ <?php echo $idioma->comundes->titulo ?>  &nbsp; &nbsp; <input type="text" name="titulo" id="titulo" size="30" /><br />
+ <?php echo $idioma->comundes->año ?>  &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="ano" id="ano" size="30" /><br />
+ <?php echo $idioma->comundes->artista ?>  &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
+ <?php echo $idioma->comundes->ciudad ?> &nbsp;&nbsp;<input type="text" name="ciudad" id="ciudad" size="30" /><br />
+ <?php echo $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
 <input type="submit" value="Upload File" />
 </form>
 	</div>
