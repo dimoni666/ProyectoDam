@@ -10,6 +10,7 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
 	<body>
+	<script src="Comun/js/SetGetParameter.js"></script>
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
 		include 'Comun/idiomas/SpaXML.php';
