@@ -74,10 +74,10 @@
     <?php
     	session_start();
     	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
-    		echo $idioma->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
-    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->logged->cerrar."</a>";
+    		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
+    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
     	} else {
-			echo "<a href='Registro/index.php'>".$idioma->logged->iniciar."</a>";
+			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
     	}
     	
 ?>

@@ -22,6 +22,8 @@ $xmlstr = <<<XML
 	<año>Any:</año>
 	<artista>Artista:</artista>
 	<ciudad>Ciutat:</ciudad>
+	<style>Estil:</style>
+	<ficheroup>Ficher a pujar: </ficheroup>
 </comundes>
 <contenido>
 	<inicio>
