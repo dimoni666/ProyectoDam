@@ -43,7 +43,7 @@
 			<li><a class="dropdown" href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
 			<li><a class="dropdown" href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
 			<li><a class="dropdown" href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
-			 <li><?php  echo $idioma->Menu->siete;?>
+			 <li><a class="dropdown" href="#" ><?php  echo $idioma->Menu->siete;?></a>
 			 <ul id="submenu">
                                 <li id="submenu"><a class="sublinks" href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a></li>
                                 <li id="submenu"><a class="sublinks" href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a></li>
