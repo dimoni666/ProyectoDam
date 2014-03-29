@@ -37,12 +37,12 @@
 			</div>
 		<div id="menu">
 		<ul>
-			<li><a class="dropdown" href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
-			<li><a class="dropdown" href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
-			<li><a class="dropdown" href="../Maquetas/maquetas.php"><?php  echo $idioma->Menu->tres;?></a></li>
-			<li><a class="dropdown" href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
-			<li><a class="dropdown" href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
-			<li><a class="dropdown" href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
+			<li><a  href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
+			<li><a  href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
+			<li><a  href="../Maquetas/maquetas.php"><?php  echo $idioma->Menu->tres;?></a></li>
+			<li><a  href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
+			<li><a  href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
+			<li><a  href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
 			 <li><a class="dropdown" href="#" ><?php  echo $idioma->Menu->siete;?></a>
 			 <ul id="submenu">
                                 <li id="submenu"><a class="sublinks" href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a></li>

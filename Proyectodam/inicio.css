@@ -25,7 +25,7 @@ z-index:-1;
 
 div#letras{
 	width:600px;
-	height: 200px;
+	class="dropdown"height: 200px;
 	position:absolute;
 	left:50px;
 	top:0px;
