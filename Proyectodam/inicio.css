@@ -9,7 +9,7 @@ heigth:100%;
 z-index:-1; 
 }
 
- #menu ul#submenu{
+ #menu ul #submenu{
         position:absolute;
         visibility: hidden;
         margin-top: 14px;
@@ -106,3 +106,32 @@ div#SpaXML{
 #menu li a:hover {
   padding-bottom:12px;
 }
+
+ul li.sublinks a
+	  {
+	  color:#000000;
+	  background:#f6f6f6;
+	  border-bottom:1px solid #cccccc;
+	  font-weight:normal;
+	  text-decoration:none;
+	  display:block;
+	  width:100px;
+	  text-align:center;
+	  margin-top:2px;
+	  }
+	 
+	ul li.sublinks a:hover
+	  {
+	  color:#000000;
+	  background:#FFEFC6;
+	  font-weight:normal;
+	  text-decoration:none;
+	  display:block;
+	  width:100px;
+	  text-align:center;
+	  }
+	 
+	ul li.sublinks
+	  {
+	  display:none;
+	  }
