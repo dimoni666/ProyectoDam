@@ -51,6 +51,7 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
  	<body>
+ 	<script src="../Comun/js/SetGetParameter.js"></script>
  	<?php 
 	include '../Comun/idiomas/SpaXML.php';
 	

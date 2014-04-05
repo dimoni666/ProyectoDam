@@ -10,6 +10,8 @@
     <script src="jquery.validate.js" type="text/javascript"></script>
     <script type="text/javascript" src="jquery.alerts.js"></script>
     <link href="jquery.alerts.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="Comun/js/menu.js"></script>
      
     <script type="text/javascript">
     <!--
