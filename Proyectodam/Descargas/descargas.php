@@ -95,26 +95,17 @@
 		}
 		$resultado = mysql_query($sql) or die(mysql_error());
 		$i = 0;
-		echo "<TABLE BORDER>";
-		/**echo "<TR>"; // Cabecera de la tabla
-		while ($i < mysql_num_fields($resultado)) {
-			$metadatos = mysql_fetch_field($resultado, $i);
-			if ($metadatos->name != "ID"){
-				echo "<TD>".ucfirst($metadatos->name)."</TD>";
-			}
-			$i++;
-		}
-		echo "</TR>";
-		**/
+		echo "<div class='table'>";
+	
 		while ($row = mysql_fetch_array($resultado, MYSQL_NUM)) {
-			echo "<TR>";
-    		echo "<TD><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></TD>";
+			echo "<div class='row'>";
+    		echo "<span class='cell'><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></span>";
     		for ($x=2;$x<count($row);$x++){
-    			echo "<TD>".$row[$x]."</TD>";
+    			echo "<span class='cell'>".$row[$x]."</span>";
     		}
-    		echo "</TR>";
+    		echo "</div>";
 		}
-		echo"</TABLE>";
+		echo"</div>";
 	}
 ?>
 </div>
