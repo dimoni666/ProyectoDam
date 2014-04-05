@@ -42,10 +42,10 @@
 		<h2><?php echo $idioma->canciones->titulo ?></h2>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
 <input type="hidden" name="temas" value="true" />
-	<p><?php echo $idioma->comundes->titulo ?></p>&nbsp; &nbsp;<input type="text" name="titulo" id="titulo" size="30" /><br />
-	<p><?php echo $idioma->comundes->año ?></p> &nbsp; &nbsp; &nbsp; <input type="text" name="ano" id="ano" size="30" /><br />
-	<p><?php echo $idioma->comundes->artista ?></p>  &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
-	<p><?php echo $idioma->comundes->ficheroup ?> </p> <input name="uploadedfile" type="file" /><br />
+	<?php echo $idioma->comundes->titulo ?>&nbsp; &nbsp;<input type="text" name="titulo" id="titulo" size="30" /><br />
+	<?php echo $idioma->comundes->año ?>&nbsp; &nbsp; &nbsp; <input type="text" name="ano" id="ano" size="30" /><br />
+	<?php echo $idioma->comundes->artista ?> &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
+	<?php echo $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
 <input type="submit" value="Upload File" />
 </form>
 	</div>
