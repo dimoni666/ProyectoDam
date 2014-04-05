@@ -99,9 +99,14 @@
 	
 		while ($row = mysql_fetch_array($resultado, MYSQL_NUM)) {
 			echo "<div class='row'>";
-    		echo "<span class='cell'><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></span>";
+    		echo "<span class='cell' style='background-color: #B8B8B8;'><a href=\"descargas.php?sd=".$_GET["sd"]."&id=".$row[0]."\">".$row[1]."</a></span>";
     		for ($x=2;$x<count($row);$x++){
-    			echo "<span class='cell'>".$row[$x]."</span>";
+    			if ($x % 2 == 0) {
+    				 $bgcolor="#D8D8D8";
+    				 } else {
+    					 $bgcolor="#B8B8B8";
+    					 }
+    					 echo "<span class='cell' style='background-color: $bgcolor;'>".$row[$x]."</span>";
     		}
     		echo "</div>";
 		}
