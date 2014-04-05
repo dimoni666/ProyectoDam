@@ -35,7 +35,6 @@
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 			</div>
-		<div id="menu">
 		<div id="container">
 		<ul>
 			<li><a class="nodropdown" href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
