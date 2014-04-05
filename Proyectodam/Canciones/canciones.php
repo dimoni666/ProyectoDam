@@ -8,7 +8,7 @@
 		<meta name="author" content="jaume" />
 		<!-- Date: 2013-05-30 -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="Comun/js/menu.js"></script>
+<script type="text/javascript" src="../Comun/js/menu.js"></script>
 	</head>
 	<body>
 	<script src="../Comun/js/SetGetParameter.js"></script>

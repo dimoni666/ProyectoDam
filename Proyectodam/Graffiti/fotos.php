@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../Comun/js/menu.js"></script>
 		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>El arte del Graffiti</title>
