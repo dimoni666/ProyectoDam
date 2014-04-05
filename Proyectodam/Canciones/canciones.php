@@ -18,24 +18,23 @@
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
-			<div id="menu">
+			<div id="container">
 		<ul>
-			<li><a href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
-			<li><a href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
-			<li><a href="../Maquetas/maquetas.php"><?php  echo $idioma->Menu->tres;?></a></li>
-			<li><a href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
-			<li><a href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
-			<li><a href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
-			 <li><?php  echo $idioma->Menu->siete;?>
-			 <ul id="submenu">
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a></li>
-                                <li id="submenu"><a href="../Descargas/descargas.php?sd=G"><?php  echo $idioma->submenu->tres;?></a></li>
-                        </ul>
-			</li>
-           <li><a href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
-		</ul>
-		</div>
+			<li><a class="nodropdown" href="../index.php"><?php  echo $idioma->Menu->uno;?></a></li>
+			<li><a class="nodropdown" href="../Canciones/canciones.php"><?php  echo $idioma->Menu->dos;?></a></li>
+			<li><a class="nodropdown" href="../Maquetas/maquetas.php"><?php  echo $idioma->Menu->tres;?></a></li>
+			<li><a class="nodropdown" href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
+			<li><a class="nodropdown" href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
+			<li><a class="nodropdown" href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
+			<li><a class="dropdown" href="#" ><?php  echo $idioma->Menu->siete;?></a></li>
+			<li class="sublinks">
+                                <a href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a>
+                                <a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a>
+                                <a href="../Descargas/descargas.php?sd=G"><?php  echo $idioma->submenu->tres;?></a>
+ 			</li>
+           <li><a class="nodropdown" href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
+ 		</ul>
+ 		</div>
 	<div id="contenido">
 		<h2><?php echo $idioma->canciones->titulo ?></h2>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
