@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	
 	<head>
-		<link rel="stylesheet" type="text/css" href="inicio.css">
+		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Bienvenido al Antro del Rap</title>
 		<meta name="author" content="jaume" />
