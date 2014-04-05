@@ -50,7 +50,6 @@
                                 <a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a>
                                 <a href="../Descargas/descargas.php?sd=G"><?php  echo $idioma->submenu->tres;?></a>
  			</li>
-          <li><a href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
            <li><a class="nodropdown" href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
  		</ul>
  		</div>
