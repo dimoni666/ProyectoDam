@@ -80,6 +80,19 @@
            <li><a class="nodropdown" href="../mediaplayer/reproductor.html" target="_blank"><?php  echo $idioma->Menu->ocho;?></a></li>
  		</ul>
  		</div>
+ 		    <div id="sesion">
+    <?php
+    	session_start();
+    	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
+    		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
+    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
+    	} else {
+			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+    	}
+    	
+?>
+    			
+        </div>
 <div id="contenido">
 <?php
 		switch ($_GET["sd"]){

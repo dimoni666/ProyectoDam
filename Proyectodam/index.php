@@ -83,7 +83,6 @@
     	
 ?>
     			
-			</form>
         </div>
 	</body>
 </html>

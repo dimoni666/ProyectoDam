@@ -49,5 +49,18 @@
        <img src="15-07-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; "/>
        <?php echo $idioma->contenido->Eventos->evento4 ?>
 	</div>
+	    <div id="sesion">
+    <?php
+    	session_start();
+    	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
+    		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
+    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
+    	} else {
+			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+    	}
+    	
+?>
+    			
+        </div>
 	</body>
 </html>

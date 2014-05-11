@@ -43,4 +43,17 @@
 		<p> <?php echo $idioma->contenido->contacta->textocont ?></p>
 	</div>
 	</body>
+	    <div id="sesion">
+    <?php
+    	session_start();
+    	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
+    		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
+    		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
+    	} else {
+			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+    	}
+    	
+?>
+    			
+        </div>
 </html>
