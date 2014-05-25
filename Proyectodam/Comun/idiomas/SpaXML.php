@@ -83,7 +83,6 @@ $xmlstr = <<<XML
 		<fallo>No se ha podido subir el archivo</fallo>
 		<extension>Las extensiones que aceptamos son: .rar,.jpg,.png,.gif y .mp3</extension>
 	</subidas>
-	
 	<canciones>
 		<titulo>Cuelga aqui tu musica, y pronto la podras oir en el reproductor!</titulo>
 	</canciones>
