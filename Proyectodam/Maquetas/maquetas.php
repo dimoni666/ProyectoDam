@@ -39,6 +39,9 @@
  		</div>
 	<div id="contenido">
 		<h2><?php echo $idioma->contenido->maquetas->textomaq ?></h2>
+		<?php 
+		session_start();
+		if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) { ?>
         <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
 <input type="hidden" name="maquetas" value="true" />
  <?php echo $idioma->comundes->titulo ?>  &nbsp; &nbsp; <input type="text" name="titulo" id="titulo" size="30" /><br />
@@ -48,6 +51,11 @@
  <?php echo $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
 <input type="submit" value="Upload File" />
 </form>
+<?php 
+		}else { 
+			echo $idioma->upload->noregist;
+		}
+	?>
 	</div>
 	    <div id="sesion">
     <?php
