@@ -86,6 +86,9 @@ $xmlstr = <<<XML
 	<canciones>
 		<titulo>Cuelga aqui tu musica, y pronto la podras oir en el reproductor!</titulo>
 	</canciones>
+	<upload>
+		<noregist> No se puede visualizar la pagina sin ser un usuario registrado.</noregist>
+	</upload>
 </proyecto>
 XML;
 ?>

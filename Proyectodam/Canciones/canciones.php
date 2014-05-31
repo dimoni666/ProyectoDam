@@ -53,7 +53,7 @@
 	</form>
 	<?php 
 		}else { 
-			echo $idioma->noregist;
+			echo $idioma->upload->noregist;
 		}
 	?>
 	</div>
