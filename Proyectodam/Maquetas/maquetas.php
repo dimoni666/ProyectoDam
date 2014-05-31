@@ -9,7 +9,7 @@
 <script type="text/javascript" src="../Comun/js/menu.js"></script>
 	<head/>	
 	<body>
-	<script src="Comun/js/SetGetParameter.js"></script>
+	<script src="../Comun/js/SetGetParameter.js"></script>
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
 		include '../Comun/idiomas/SpaXML.php';
@@ -41,7 +41,7 @@
 			<li><a class="nodropdown" href="../Info/info.php"><?php  echo $idioma->Menu->cuatro;?></a></li>
 			<li><a class="nodropdown" href="../Graffiti/fotos.php"><?php  echo $idioma->Menu->cinco;?></a></li>
 			<li><a class="nodropdown" href="../Eventos/eventos.php"><?php  echo $idioma->Menu->seis;?></a></li>
-			<li><a class="dropdown" href="#" ><?php  echo $idioma->Menu->siete;?></a></li>
+			<li><a class="dropdown" href="#" > <?php  echo $idioma->Menu->siete;?></a></li>
 			<li class="sublinks">
                                 <a href="../Descargas/descargas.php?sd=M"><?php  echo $idioma->submenu->uno;?></a>
                                 <a href="../Descargas/descargas.php?sd=C"><?php  echo $idioma->submenu->dos;?></a>

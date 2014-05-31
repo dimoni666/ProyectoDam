@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../Comun/js/menu.js"></script>
 	</head>
 	<body>
-	<script src="Comun/js/SetGetParameter.js"></script>
+	<script src="../Comun/js/SetGetParameter.js"></script>
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
 		include '../Comun/idiomas/SpaXML.php';
