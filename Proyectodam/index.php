@@ -18,7 +18,7 @@
 		include 'Comun/idiomas/SpaXML.php';
 	}else if(isset($_GET['leng'])){
 		include 'Comun/idiomas/'. $_GET['leng'] .'.php';
-		$_COOKIE['leng'] = $_GET['leng'];
+		setcookie('leng',$_GET['leng']);
 	}else if(isset($_COOKIE['leng'])){
 		include 'Comun/idiomas/'.$_COOKIE['leng'].'.php';
 	}
