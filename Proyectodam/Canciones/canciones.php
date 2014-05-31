@@ -11,13 +11,26 @@
 <script type="text/javascript" src="../Comun/js/menu.js"></script>
 	</head>
 	<body>
-	<script src="../Comun/js/SetGetParameter.js"></script>
+	<script src="Comun/js/SetGetParameter.js"></script>
 	<?php 
-	include '../Comun/idiomas/SpaXML.php';
-	
+	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
+		include 'Comun/idiomas/SpaXML.php';
+	}else if(isset($_GET['leng'])){
+		include 'Comun/idiomas/'. $_GET['leng'] .'.php';
+		$_COOKIE['leng'] = $_GET['leng'];
+	}else if(isset($_COOKIE['leng'])){
+		include 'Comun/idiomas/'.$_COOKIE['leng'].'.php';
+	}
 	$idioma = new SimpleXMLElement($xmlstr);
-	
 	?>
+		<div id="CatXML">
+	<a href="#" onClick="SetGetParameter('leng','CatXML');"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
+	height= "25px" id="fotoCat"/></a>
+		</div>
+		<div id="SpaXML">
+	<a href="#" onClick="SetGetParameter('leng','SpaXML');"><img src="../Comun/Imagenes/boton_bandera_espanola.png" width="25px"
+	height="25px" id="fotoSP" /></a>
+	</div>
 		<div id="letras">
 			<a href="../index.php"> <img src="../Comun/Imagenes/logo.png" id=foto2 /></a>
 		</div>
