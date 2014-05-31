@@ -40,18 +40,26 @@
  		</div>
 	<div id="contenido">
 		<h2><?php echo $idioma->canciones->titulo ?></h2>
-        <form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
-<input type="hidden" name="temas" value="true" />
-	<?php echo $idioma->comundes->titulo ?>&nbsp; &nbsp;<input type="text" name="titulo" id="titulo" size="30" /><br />
-	<?php echo $idioma->comundes->año ?>&nbsp; &nbsp; &nbsp; <input type="text" name="ano" id="ano" size="30" /><br />
-	<?php echo $idioma->comundes->artista ?> &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
-	<?php echo $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
-<input type="submit" value="Upload File" />
-</form>
+		<?php 
+		session_start();
+		if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) { ?>
+		<form enctype="multipart/form-data" action="../Comun/uploader.php" method="post">
+			<input type="hidden" name="temas" value="true" />
+				<?php echo $idioma->comundes->titulo ?>&nbsp; &nbsp;<input type="text" name="titulo" id="titulo" size="30" /><br />
+				<?php echo $idioma->comundes->año ?>&nbsp; &nbsp; &nbsp; <input type="text" name="ano" id="ano" size="30" /><br />
+				<?php echo $idioma->comundes->artista ?> &nbsp;<input type="text" name="artista" id="artista" size="30" /><br />
+				<?php echo $idioma->comundes->ficheroup ?><input name="uploadedfile" type="file" /><br />
+		<input type="submit" value="Upload File" />
+	</form>
+	<?php 
+		}else { 
+			echo $idioma->noregist;
+		}
+	?>
 	</div>
 	    <div id="sesion">
     <?php
-    	session_start();
+    	
     	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
     		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
     		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
