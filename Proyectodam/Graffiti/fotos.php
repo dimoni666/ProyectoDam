@@ -14,12 +14,12 @@
 <script src="Comun/js/SetGetParameter.js"></script>
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
-		include 'Comun/idiomas/SpaXML.php';
+		include '../Comun/idiomas/SpaXML.php';
 	}else if(isset($_GET['leng'])){
-		include 'Comun/idiomas/'. $_GET['leng'] .'.php';
+		include '../Comun/idiomas/'. $_GET['leng'] .'.php';
 		$_COOKIE['leng'] = $_GET['leng'];
 	}else if(isset($_COOKIE['leng'])){
-		include 'Comun/idiomas/'.$_COOKIE['leng'].'.php';
+		include '../Comun/idiomas/'.$_COOKIE['leng'].'.php';
 	}
 	$idioma = new SimpleXMLElement($xmlstr);
 	?>
