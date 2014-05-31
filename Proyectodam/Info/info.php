@@ -42,7 +42,7 @@
     	<h1> <?php echo $idioma->contenido->contacta->titulocont ?></h1>
 		<p> <?php echo $idioma->contenido->contacta->textocont ?></p>
 	</div>
-	</body>
+	
 	    <div id="sesion">
     <?php
     	session_start();
@@ -51,11 +51,12 @@
     		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
     		echo "<form><input type=\"button\" value=\"Descarga\" onClick=\"window.location.href='../Comun/Descargas/proyecto.jar'\"></form>";
     	} else {
-			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+			echo "<a href='../Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
 			
     	}
     	
 ?>
     			
         </div>
+        </body>
 </html>

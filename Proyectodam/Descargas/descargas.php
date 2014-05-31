@@ -87,7 +87,7 @@
     		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
     		echo "<a href='Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
     	} else {
-			echo "<a href='Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+			echo "<a href='../Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
     	}
     	
 ?>
