@@ -1,17 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	
-	<head>
-		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Bienvenido al Antro del Rap</title>
-		<meta name="author" content="jaume" />
-		<!-- Date: 2013-05-30 -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="Comun/js/menu.js"></script>
-	</head>
-	<body>
 	<script src="Comun/js/SetGetParameter.js"></script>
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
@@ -24,6 +10,20 @@
 	}
 	$idioma = new SimpleXMLElement($xmlstr);
 	?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Bienvenido al Antro del Rap</title>
+		<meta name="author" content="jaume" />
+		<!-- Date: 2013-05-30 -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="Comun/js/menu.js"></script>
+	</head>
+	<body>
 		<div id="CatXML">
 	<a href="#" onClick="SetGetParameter('leng','CatXML');"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
 	height= "25px" id="fotoCat"/></a>

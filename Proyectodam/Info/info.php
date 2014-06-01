@@ -1,4 +1,16 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<script src="../Comun/js/SetGetParameter.js"></script>
+	<?php 
+	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
+		include '../Comun/idiomas/SpaXML.php';
+	}else if(isset($_GET['leng'])){
+		include '../Comun/idiomas/'. $_GET['leng'] .'.php';
+		setcookie('leng',$_GET['leng']);
+	}else if(isset($_COOKIE['leng'])){
+		include '../Comun/idiomas/'.$_COOKIE['leng'].'.php';
+	}
+	$idioma = new SimpleXMLElement($xmlstr);
+	?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 	<head>
@@ -11,18 +23,7 @@
 		<script type="text/javascript" src="../Comun/js/menu.js"></script>
 	</head>
 	<body>
-<script src="../Comun/js/SetGetParameter.js"></script>
-	<?php 
-	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
-		include '../Comun/idiomas/SpaXML.php';
-	}else if(isset($_GET['leng'])){
-		include '../Comun/idiomas/'. $_GET['leng'] .'.php';
-		setcookie('leng',$_GET['leng']);
-	}else if(isset($_COOKIE['leng'])){
-		include '../Comun/idiomas/'.$_COOKIE['leng'].'.php';
-	}
-	$idioma = new SimpleXMLElement($xmlstr);
-	?>
+
 		<div id="CatXML">
 	<a href="#" onClick="SetGetParameter('leng','CatXML');"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
 	height= "25px" id="fotoCat"/></a>

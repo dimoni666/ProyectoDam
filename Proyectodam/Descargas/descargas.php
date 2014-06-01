@@ -1,3 +1,15 @@
+	<script src="../Comun/js/SetGetParameter.js"></script>
+	<?php 
+	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
+		include '../Comun/idiomas/SpaXML.php';
+	}else if(isset($_GET['leng'])){
+		include '../Comun/idiomas/'. $_GET['leng'] .'.php';
+		setcookie('leng',$_GET['leng']);
+	}else if(isset($_COOKIE['leng'])){
+		include '../Comun/idiomas/'.$_COOKIE['leng'].'.php';
+	}
+	$idioma = new SimpleXMLElement($xmlstr);
+	?>
 <?php
 
 
@@ -53,18 +65,6 @@
 		<!-- Date: 2013-05-30 -->
 	</head>
  	<body>
- 	<script src="../Comun/js/SetGetParameter.js"></script>
-	<?php 
-	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
-		include '../Comun/idiomas/SpaXML.php';
-	}else if(isset($_GET['leng'])){
-		include '../Comun/idiomas/'. $_GET['leng'] .'.php';
-		setcookie('leng',$_GET['leng']);
-	}else if(isset($_COOKIE['leng'])){
-		include '../Comun/idiomas/'.$_COOKIE['leng'].'.php';
-	}
-	$idioma = new SimpleXMLElement($xmlstr);
-	?>
 		<div id="CatXML">
 	<a href="#" onClick="SetGetParameter('leng','CatXML');"><img src="../Comun/Imagenes/boton_bandera_catalana.png" width= "25px"
 	height= "25px" id="fotoCat"/></a>
