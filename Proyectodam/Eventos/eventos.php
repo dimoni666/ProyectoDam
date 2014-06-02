@@ -52,15 +52,24 @@
  		</div>
 	<div id="contenido">
     	<?php echo $idioma->Eventos->texto ?>
+    	
 			<h1><?php echo $idioma->contenido->Eventos->titulo ?></h1>
-	<img src="17-06-2013.png" alt="Atrevete" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
-    		   <?php echo $idioma->contenido->Eventos->evento1 ?>
-	  <img src="13-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; top:100px;"/>
-      	<?php echo $idioma->contenido->Eventos->evento2 ?>
-     	<img src="21-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
-     	<?php echo $idioma->contenido->Eventos->evento3 ?>
-       <img src="15-07-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; "/>
-       <?php echo $idioma->contenido->Eventos->evento4 ?>
+			<div id="evento01">
+			<img src="17-06-2013.png" alt="Atrevete" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
+    		<?php echo $idioma->contenido->Eventos->evento1 ?>
+    	 </div>
+    	 <div id="evento02">
+	  		<img src="13-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; top:100px;"/>
+      		<?php echo $idioma->contenido->Eventos->evento2 ?>
+      	</div>
+      	<div id="evento03">
+     		<img src="21-06-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px;"/>
+     		<?php echo $idioma->contenido->Eventos->evento3 ?>
+     	</div>
+     	<div id="evento04">
+      		<img src="15-07-2013.png" alt="Concierto" width="144" height="105" style="float:left;margin: 5px 5px 5px 5px; "/>
+      		<?php echo $idioma->contenido->Eventos->evento4 ?>
+      	</div>
 	</div>
 	    <div id="sesion">
     <?php

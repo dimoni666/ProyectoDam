@@ -52,6 +52,35 @@ div#contenido{
 	left:15%;
 	top:30%;
 }
+div#evento01{
+	font-family: Helvetica,sans-serif,Arial;
+	right:15%;
+	position: fixed;
+	left:15%;
+	top:32%;
+}
+div#evento02{
+	font-family: Helvetica,sans-serif,Arial;
+	right:15%;
+	position: fixed;
+	left:15%;
+	top:35%;
+}
+div#evento03{
+	font-family: Helvetica,sans-serif,Arial;
+	right:15%;
+	position: fixed;
+	left:15%;
+	top:38%;
+}
+div#evento04{
+	font-family: Helvetica,sans-serif,Arial;
+	right:15%;
+	position: fixed;
+	left:15%;
+	top:41%;
+	
+}
 div#sesion{
 	width: 215px;
 	height: 120px;
