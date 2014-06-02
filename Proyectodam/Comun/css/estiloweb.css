@@ -81,6 +81,9 @@ div#evento04{
 	top:83%;
 	
 }
+div#contenido p{
+	font-family: Helvetica,sans-serif,Arial;
+}
 div#sesion{
 	width: 215px;
 	height: 120px;
