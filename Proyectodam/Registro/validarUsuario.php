@@ -11,7 +11,7 @@
     $pw_enc = md5($pw);
      
     $sql = "SELECT id,nombre FROM tbl_users
-            WHERE nickname = '".$usr."'
+            WHERE nickname = '".mysql_real_escape_string($usr)."'
             AND password = '".$pw_enc."' ";  
     $result     =mysql_query($sql,$conexio); 
  	

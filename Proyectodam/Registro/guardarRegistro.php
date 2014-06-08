@@ -5,7 +5,7 @@
     $str_apPaterno  =trim($_POST['tx_apPaterno']);
     $str_apMaterno  =trim($_POST['tx_apMaterno']);
     $str_correo         =trim($_POST['tx_correo']);
-    $str_username       =trim($_POST['usuario']);
+    $str_username       =trim($_POST['tx_username']);
     $str_password       =trim($_POST['tx_password']);
     $str_password2  =trim($_POST['tx_password2']);
  
@@ -103,7 +103,7 @@
         <input type="hidden" name="str_apPaterno" value='<?php echo $str_apPaterno ?>' />
         <input type="hidden" name="str_apMaterno" value='<?php echo $str_apMaterno ?>' />
         <input type="hidden" name="str_correo" value='<?php echo $str_correo ?>' />
-        <input type="hidden" name="str_username" value='<?php echo $str_username ?>' />
+        <input type="hidden" name="str_username" value='<?php echo $usuario ?>' />
         <input type="hidden" name="str_password" value='<?php echo $str_password ?>' />
         <input type="hidden" name="str_password2" value='<?php echo $str_password2 ?>' />
     </form>
