@@ -5,7 +5,7 @@
     $str_apPaterno  =trim($_POST['tx_apPaterno']);
     $str_apMaterno  =trim($_POST['tx_apMaterno']);
     $str_correo         =trim($_POST['tx_correo']);
-    $str_username       =trim($_POST['tx_username']);
+    $str_username       =trim($_POST['usuario']);
     $str_password       =trim($_POST['tx_password']);
     $str_password2  =trim($_POST['tx_password2']);
  
