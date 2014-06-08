@@ -1,4 +1,4 @@
-	<script src="../Comun/js/SetGetParameter.js"></script>
+	
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
 		include '../Comun/idiomas/SpaXML.php';
@@ -14,6 +14,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	
 	<head>
+		<script src="../Comun/js/SetGetParameter.js"></script>
 		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Sube aqui tu musica!</title>

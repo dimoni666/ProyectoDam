@@ -54,6 +54,7 @@ $xmlstr = <<<XML
 		<estiloform>Estil:</estiloform>
 	</graffiti>
 	<Eventos>
+		<titulo>Aqui los events proxims: </titulo>
 		<evento1>17/06/2013: Per als amants dels grafitis aquest dissabte podran demostrar les seves habilitats en el nostre local, tindrem un mur molt especial en el qual podreu donar regna solta a les vostres habilitats amb el spray. Es dispondra de 30 minuts per realitzar el dibuix i una gamma de 10 colors per poder utilitzar.</evento1>
 		<evento2>13/06/2013: Afineu vostres goles perquè ja està aquí el torneig dels tornejos del rap. Hauran dues fases eliminatòries per arribar a la final. La primera fase sera de freestyle de 60 segons cada ronda de cada participant, la segona fase sera amb la cançó mes votada a la pàgina web. </evento2>
 		<evento3>21/06/2013: Que seria de tots nosaltres sense els nostres volguts DJ's...GENS!!! Per això volem organitzar un "especial" per a ells on podran demostrar les seves habilitats ratllant els discos. En aquesta ocasió es permetrà participar sense ser usuari amb bases pujades. Els que no siguin usuaris de la pàgina ens hauran d'enviar un mail amb les dades personals(dni, nom, cognoms, nºmovil) i amb almenys dues bases. Us respondrem en la major brevetat possible amb la confirmació de la invitació a l'esdeveniment.</evento3>
@@ -81,10 +82,18 @@ $xmlstr = <<<XML
 		<cerrar>Tanca sesió</cerrar>
 		<iniciar>Inicia sesió</iniciar>
 	</logged>
+	</contenido>
+	<subidas>
+		<completa>El ficher s'ha pujat amb exit!</completa>
+		<fallo>No s'hi ha pogut pujar l'archiu</fallo>
+		<extension>Les extensions que acceptem son: .rar,.jpg,.png,.gif y .mp3</extension>
+	</subidas>
 	<canciones>
 		<titulo>Penja aqui la teva musica, i aviat la podras escoltar al reproductor!</titulo>
 	</canciones>
-	</contenido>
+	<upload>
+		<noregist> No es pot veure aquesta pagina, per poguer fer-ho haureu d'estar registrats.</noregist>
+	</upload>
 </proyecto>
 XML;
 ?>

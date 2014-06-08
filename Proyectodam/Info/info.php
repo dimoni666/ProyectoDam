@@ -1,4 +1,4 @@
-﻿<script src="../Comun/js/SetGetParameter.js"></script>
+﻿
 	<?php 
 	if (!isset($_GET['leng']) && !isset($_COOKIE['leng'])){
 		include '../Comun/idiomas/SpaXML.php';
@@ -21,6 +21,7 @@
 		<!-- Date: 2013-05-30 -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="../Comun/js/menu.js"></script>
+		<script src="../Comun/js/SetGetParameter.js"></script>
 	</head>
 	<body>
 
