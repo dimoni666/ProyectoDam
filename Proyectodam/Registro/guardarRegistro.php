@@ -85,9 +85,9 @@
         $mensajesAll .= "<li>Su contrase&ntilde;a como minimo debe tener 5 caracteres.</li>";
     //Mensajes para la confirmacion del password
     if( estaEnBlanco($str_password2) || validaTamanio($str_password2,5) )
-        $mensajesAll .= "<li>Por favor, confirme la contrase&ntilde;a anterior.</li>";
+        $mensajesAll .= "<li>Por favor, confirme la contraseña anterior.</li>";
     if( trim($str_password) != trim($str_password2) )
-        $mensajesAll .= "<li>Por favor, repita la contrase&ntilde;a anterior.</li>";    
+        $mensajesAll .= "<li>Por favor, repita la contraseña anterior.</li>";    
  
     $log = $mensajesAll."<br>";
  
