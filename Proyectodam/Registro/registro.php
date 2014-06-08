@@ -90,13 +90,13 @@ if( isset($_POST['str_password2']) )
                 minlength: jQuery.format("Su nombre de usuario como minimo debe tener {0} caracteres.")
             },
             tx_password: {
-                required: "Por favor, escriba una contrase�a.",
-                minlength: jQuery.format("Su contrase�a como minimo debe tener {0} caracteres.")
+                required: "Por favor, escriba una contrase&ntilde;a.",
+                minlength: jQuery.format("Su contrase&ntilde;a como minimo debe tener {0} caracteres.")
             },
             tx_password2: {
-                required: "Por favor, repita la contrase�a anterior.",
-                minlength: jQuery.format("Su contrase�a como minimo debe tener {0} caracteres."),
-                equalTo: "Por favor, repita la contrase�a anterior.",
+                required: "Por favor, repita la contrase&ntilde;a anterior.",
+                minlength: jQuery.format("Su contrase&ntilde;a como minimo debe tener {0} caracteres."),
+                equalTo: "Por favor, repita la contrase&ntilde;a anterior.",
             }
  
         }
