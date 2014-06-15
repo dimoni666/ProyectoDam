@@ -73,6 +73,5 @@ function goBack() {
 <tr>
 <td><button onclick="goBack()">Volver</button></td>
 </tr>
-</tr>
 </table>
 </body>
