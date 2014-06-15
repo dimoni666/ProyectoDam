@@ -36,6 +36,7 @@ $xmlstr = <<<XML
 			Aquest llenguatge i aquesta cadència particular se sustenten en una actitud contestatària, d'una clara tendència anti-sistema. Però com tota expressió artística, resulta molt complex detenir-la o congelar-la. És així que els rapers dels anys 70 van donar lloc a una expressió més metafòrica i complexa des de la lírica en els anys 80, que alhora es va manifestar en els ritmes i bases de musica empleades.
 			</textoini>
 	</inicio>
+
 <maquetas>
 		<textomaq>Tenes un grup? Fart de no sapiguer que fer amb les teves cançons? Puja-les i si ens agraden tindras un lloc als nostres events!!!</textomaq>
 		</maquetas>
@@ -48,7 +49,7 @@ $xmlstr = <<<XML
 					està mal(NOMES COSES LÒGIQUES) aconseguiran una beguda gratis en el nostre local sempre que no hi hagi concert o algun esdeveniment especial. Només hauràs d'anar a la barra i indicar el teu nom d'usuari i el dia que ho vas enviar,
 					després d'una petita comprovació et donarem la teva beguda GRATIS!!!!
 			</textocont>
-			<mail> Envia'ns un mail </mail>
+	<mail> Envia'ns un mail </mail>
 	</contacta>
 	<graffiti>
 		<titulograff>Puja les teves peces i anirem pentjant-les pel nostre local!</titulograff>
