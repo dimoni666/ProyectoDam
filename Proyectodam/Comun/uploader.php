@@ -71,7 +71,7 @@ function goBack() {
 <td><?php echo $mensaje; ?></td>
 </tr>
 <tr>
-<td><button onclick="goBack()">Volver</button></td>
+<td><button onclick="goBack()" align="center">Volver</button></td>
 </tr>
 </table>
 </body>
