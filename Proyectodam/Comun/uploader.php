@@ -35,7 +35,7 @@ if((isset($_POST['maquetas'])) && (preg_match("/.*rar/",$file_type) || preg_matc
 }else{
 	$error = true;
 }
-if ($error){
+if (!$error){
 	$conexio = mysql_connect($elServer, $elUsr, $elPw) or die (mysql_error());
 	mysql_select_db($laBd, $conexio ) or die (mysql_error());
 	mysql_query($sql) or die(mysql_error());
