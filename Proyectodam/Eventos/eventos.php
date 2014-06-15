@@ -18,7 +18,7 @@
 		<script type="text/javascript" src="../Comun/js/menu.js"></script>
 		<link rel="stylesheet" type="text/css" href="../Comun/css/estiloweb.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Contacta con nosotros</title>
+		<title>Disfruta de los eventos</title>
 		<meta name="author" content="jaume" />
 		<!-- Date: 2013-05-30 -->
 	</head>

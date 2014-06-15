@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>.:: Login ::. Ejemplo autenticar usuarios</title>
+    <title>.:: Login ::.</title>
      
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="estilos.css" type="text/css">
@@ -43,14 +43,6 @@
         <input type="password" name="password" id="password" class="required"  maxlength="15">
     </td>
 </tr>
-<tr >
-    <td colspan="2" >
-        <a href="recuperarPassword.php">
-            Olvide mi contrase&ntilde;a
-        </a>
-    </td>
-</tr>
- 
 <tr>
     <td colspan="2" align="right">
         <input type="submit" name="enviar" value="Enviar" >
