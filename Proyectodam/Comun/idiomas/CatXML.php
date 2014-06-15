@@ -48,6 +48,7 @@ $xmlstr = <<<XML
 					està mal(NOMES COSES LÒGIQUES) aconseguiran una beguda gratis en el nostre local sempre que no hi hagi concert o algun esdeveniment especial. Només hauràs d'anar a la barra i indicar el teu nom d'usuari i el dia que ho vas enviar,
 					després d'una petita comprovació et donarem la teva beguda GRATIS!!!!
 			</textocont>
+			<mail> Envia'ns un mail </mail>
 	</contacta>
 	<graffiti>
 		<titulograff>Puja les teves peces i anirem pentjant-les pel nostre local!</titulograff>

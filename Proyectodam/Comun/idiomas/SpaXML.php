@@ -47,6 +47,7 @@ $xmlstr = <<<XML
 			Y solo por ser usuario y enviarnos un mail con alguna propuesta de mejora o informando de que algo 
 			està mal(PORSUPUESTO CON ALGO LÓGICO) conseguiran una bebida gratis en nuestro local siempre que no haya concierto o algún evento especial. Sólo tendrás que ir a la barra e indicar tu nombre de usuario y el día que lo enviaste,
  			tras una pequeña comprobación te daremos tu bebida GRATIS!!!! </textocont>
+ 			<mail> Envianos un mail </mail>
 		</contacta>
 		<graffiti>
 			<titulograff>Sube tus piezas e iremos colgandolas por nuestro local!</titulograff>
