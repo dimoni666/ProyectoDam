@@ -96,12 +96,13 @@
  		</div>
  		    <div id="sesion">
     <?php
-    	session_start();
-    	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
+	if (isset($_SESSION["autenticado"]) and ($_SESSION["autenticado"] == "SI")) {
     		echo $idioma->contenido->logged->saludo.", " . $_SESSION["nombre"] . "<br/>";
     		echo "<a href='../Registro/cerrarSesion.php'>".$idioma->contenido->logged->cerrar."</a>";
+    		echo "<form><input type=\"button\" value=\"Descarga\" onClick=\"window.location.href='../Comun/Descargas/setup.sfx.exe'\"></form>";
     	} else {
 			echo "<a href='../Registro/index.php'>".$idioma->contenido->logged->iniciar."</a>";
+			
     	}
     	
 ?>
