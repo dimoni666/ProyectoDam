@@ -223,7 +223,7 @@ ul li.sublinks
 .table{
   display: table;
   padding: 5px;
-  margin: 5px;
+  margin: 5%;
 }
 .row{
   display: table-row;
