@@ -57,7 +57,7 @@
     	<h1> <?php echo $idioma->contenido->contacta->titulocont ?></h1>
 		<p> <?php echo $idioma->contenido->contacta->textocont ?></p>
 		<a href="mailto:elantrodelrap@gmail.com?Subject=Consulta%20again" target="_top">
-<?php $idioma->contenido->contacta->mail?></a>
+<?php echo $idioma->contenido->contacta->mail?></a>
 	</div>
 	
 	    <div id="sesion">
